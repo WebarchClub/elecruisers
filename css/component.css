@@ -25,7 +25,7 @@ html.js,
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 50vh;
+	height: 30vh;
 	padding: 30px;
 	pointer-events: none;
 	opacity: 0;
@@ -54,27 +54,8 @@ html.js,
 	padding: 0 10%;
 }
 
-.pages-nav .pages-nav__item--social {
-	width: 100%;
-	opacity: 0;
-	-webkit-transition: -webkit-transform 1.2s, opacity 1.2s;
-	transition: transform 1.2s, opacity 1.2s;
-	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-	-webkit-transform: translate3d(0, 20px, 0);
-	transform: translate3d(0, 20px, 0);
-}
-
-.pages-nav--open .pages-nav__item--social {
-	opacity: 1;
-	-webkit-transition-delay: 0.35s;
-	transition-delay: 0.35s;
-	-webkit-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
-}
-
 .link {
-	font-size: 0.85em;
+	font-size: 1em;
 	font-weight: bold;
 	position: relative;
 	letter-spacing: 1px;
@@ -121,21 +102,7 @@ html.js,
 }
 
 .link--page.link--faded {
-	font-size: 0.65em;
-}
-
-.link--social {
-	font-size: 1.5em;
-	margin: 0 0.75em;
-}
-
-.text-hidden {
-	position: absolute;
-	display: block;
-	overflow: hidden;
-	width: 0;
-	height: 0;
-	color: transparent;
+	font-size: 0.85em;
 }
 
 /* Pages stack */
@@ -158,6 +125,7 @@ html.js,
 	pointer-events: auto;
 	background: #2a2b30;
 	box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+	margin-top: 5%;
 }
 
 .js .pages-stack--open .page {
@@ -176,13 +144,6 @@ html.js,
 }
 
 /* page content */
-
-.info {
-	font-size: 1.25em;
-	max-width: 50%;
-	margin-top: 1.5em;
-}
-
 .poster {
 	position: absolute;
 	bottom: 4vh;
@@ -268,9 +229,6 @@ html.js,
 }
 
 @media screen and (max-width: 60em) {
-	.info {
-		max-width: 100%;
-	}
 	.poster {
 		position: relative;
 		top: auto;
@@ -289,9 +247,6 @@ html.js,
 		white-space: nowrap;
 		text-overflow: ellipsis;
 	}
-	.link--social {
-		margin: 0 0.1em;
-	}
 }
 
 @media screen and (max-width: 40em) {
@@ -309,16 +264,10 @@ html.js,
 		width: auto;
 		margin-right: 5px;
 	}
-	.pages-nav__item--social {
-		font-size: 0.9em;
-	}
 	.menu-button {
 		top: 15px;
 		right: 10px;
 		left: auto;
-	}
-	.info {
-		font-size: 0.85em;
 	}
 	.poster {
 		margin: 1em;
