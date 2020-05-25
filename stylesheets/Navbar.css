@@ -1,0 +1,42 @@
+.navbar{
+    background-color: rgba(2,45,69, 0.9);
+}
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(2,45,69, 0.9);
+    overflow-y: hidden;
+    transition: 1s;
+}
+  
+.overlay-content {
+    position: relative;
+    margin-top: 15%;
+}
+  
+.overlay div a {
+    padding: 10%;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.5s;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: brown;
+    letter-spacing: 2px;
+    transform: scale(1.5);
+    transition: 100ms;
+}  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    text-decoration: none;
+}
