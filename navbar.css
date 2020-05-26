@@ -282,6 +282,8 @@ html.js,
 		top: 15px;
 		right: 10px;
 		left: auto;
+		width: 19px;
+		height: 10px;
 	}
 	.poster {
 		margin: 1em;
