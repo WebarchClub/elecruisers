@@ -1,5 +1,4 @@
 body {
-
 	margin: 0;
 	color: #cecece;
 	background: #202040;
@@ -15,6 +14,7 @@ a {
 a:hover {
 	color: #b80d57;
 }
+
 
 html.js,
 .js body {
@@ -36,12 +36,11 @@ html.js,
 	padding: 20px;
 	text-align: center;
 	background: #0e0f0f;
-	margin-top: 5%;
 }
 
 .js .pages-nav {
 	position: absolute;
-	top: 50;
+	top: 0;
 	left: 0;
 	width: 100%;
 	height: 30vh;
@@ -71,6 +70,7 @@ html.js,
 
 .js .pages-nav__item {
 	padding: 0 10%;
+	font-size: 20px;
 }
 
 .link {
@@ -148,7 +148,7 @@ html.js,
 	pointer-events: auto;
 	background: teal;
 	box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
-	margin-top: 4%; 
+	margin-top: 5%;
 
 }
 
@@ -158,7 +158,7 @@ html.js,
 	transition: transform 0.45s, opacity 0.45s;
 	-webkit-transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
 	transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
-    margin-top: 15%; 
+
 }
 
 .js .page--inactive {
@@ -259,7 +259,7 @@ html.js,
 	}
 	.pages-nav__item {
 		width: 50%;
-		min-height: 20px;
+		min-height: 10px;
 		text-align: center;
 
 	}
@@ -281,8 +281,10 @@ html.js,
 	}
 
 	.js .pages-nav__item {
+
 		width: 100%;
 		padding: 2px 0;
+		font-size: 15px;
 	}
 	.js .pages-nav__item--small {
 		display: inline-block;
@@ -290,28 +292,36 @@ html.js,
 		margin-right: 5px;
 	}
 	.menu-button {
-		top: 15px;
+		top: 10px;
 		right: 10px;
 		left: auto;
 		width: 19px;
-		height: 10px;
+		height: 8px;
 	}
 	.poster {
 		margin: 1em;
 
 	}
-
-	.js .page {
-		margin-top: 15%; 
+	.width {
+		margin-bottom: 50px;
 	}
+	.js .pages-stack {
+		z-index: 100;
+		pointer-events: none;
+		-webkit-perspective: 1200px;
+		perspective: 1600px;
+		-webkit-perspective-origin: 50% -50%;
+		perspective-origin: 50% -400%;
 
-	.js .pages-stack--open .page {
-		margin-top: 30%; 
 
+	}
+	.pages-nav {
+		margin-top: 50px;
+		margin-bottom: 40px;
 	}
 
 }
 .width {
-height: 26px;
+height: 24px;
 
 }
