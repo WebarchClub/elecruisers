@@ -15,6 +15,7 @@ a:hover {
 	color: #b80d57;
 }
 
+
 html.js,
 .js body {
 /* 	overflow: hidden; */
@@ -69,6 +70,7 @@ html.js,
 
 .js .pages-nav__item {
 	padding: 0 10%;
+	font-size: 20px;
 }
 
 .link {
@@ -257,7 +259,7 @@ html.js,
 	}
 	.pages-nav__item {
 		width: 50%;
-		min-height: 20px;
+		min-height: 10px;
 		text-align: center;
 
 	}
@@ -279,8 +281,10 @@ html.js,
 	}
 
 	.js .pages-nav__item {
+
 		width: 100%;
 		padding: 2px 0;
+		font-size: 15px;
 	}
 	.js .pages-nav__item--small {
 		display: inline-block;
@@ -296,9 +300,26 @@ html.js,
 		margin: 1em;
 
 	}
+	.width {
+		margin-bottom: 50px;
+	}
+	.js .pages-stack {
+		z-index: 100;
+		pointer-events: none;
+		-webkit-perspective: 1200px;
+		perspective: 1600px;
+		-webkit-perspective-origin: 50% -50%;
+		perspective-origin: 50% -400%;
+
+
+	}
+	.pages-nav {
+		margin-top: 50px;
+		margin-bottom: 40px;
+	}
 
 }
 .width {
-height: 26px;
+height: 24px;
 
 }
