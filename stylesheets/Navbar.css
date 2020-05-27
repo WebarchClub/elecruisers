@@ -2,12 +2,15 @@ body {
     margin: 0;
     color: #cecece;
     background: #202040;
+
+      background-image: url('https://img.freepik.com/free-vector/abstract-blue-hexagon-shapes-dark-background_125759-111.jpg?size=626&ext=jpg');
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 a {
     text-decoration: none;
-    color: #5c5edc;
+    color: #ff5200;
     outline: none;
 }
 
@@ -36,6 +39,7 @@ html.js,
     padding: 20px;
     text-align: center;
     background: #0e0f0f;
+
 }
 
 .js .pages-nav {
@@ -278,6 +282,10 @@ html.js,
         display: block;
         padding: 10px 20px 0 20px;
         text-align: center;
+        column-count: 2;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        line-height: 250%; 
     }
 
     .js .pages-nav__item {
@@ -285,6 +293,7 @@ html.js,
         width: 100%;
         padding: 2px 0;
         font-size: 15px;
+        /* border-style: solid; */
     }
     .js .pages-nav__item--small {
         display: inline-block;
@@ -315,10 +324,7 @@ html.js,
 
 
     }
-    .pages-nav {
-        margin-top: 50px;
-        margin-bottom: 40px;
-    }
+    
 
 }
 .width {
