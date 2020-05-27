@@ -26,6 +26,7 @@ html.js,
 /* Pages nav */
 
 .pages-nav {
+    margin-top: 40px;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-wrap: wrap;
@@ -38,9 +39,11 @@ html.js,
     text-align: center;
     background: #0e0f0f;
 
+
 }
 
 .js .pages-nav {
+
     position: absolute;
     top: 0;
     left: 0;
