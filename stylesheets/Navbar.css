@@ -32,6 +32,11 @@ nav{
     transform: scale(1.1);
     transition: 200ms;
 }
+.pages-nav{
+  margin-right: 0;
+}
+
+
 div.container a
 {
     color: #FFF;
@@ -43,6 +48,9 @@ div.container a
     z-index: 0;
     cursor: pointer;
 }
+
+
+
 
 div.pullRightLeft a:before, div.pullRightLeft a:after
 {
@@ -74,12 +82,26 @@ div.pullRightLeft a:hover:before, div.pullRightLeft a:hover:after
 @media screen and (max-width: 990px) {
    .nav-link {
      text-align: center;
-    }
+}
 
 .js .pages-nav {
     display: block;
+  margin: auto;
     text-align: center;
     column-count: 2;
-    }
+}
+}
+@media screen and (max-width: 990px){
+  .nav-link {
+    text-align: center;
+
+}
+
+.js .pages-nav {
+   display: block;
+   text-align: center;
+   column-count: 2;
+     margin: auto;
+}
 
 }
