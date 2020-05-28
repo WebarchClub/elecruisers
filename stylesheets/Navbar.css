@@ -32,7 +32,7 @@ nav{
     transform: scale(1.1);
     transition: 200ms;
 }
-/* div.container a
+div.container a
 {
     color: #FFF;
     text-decoration: none;
@@ -68,5 +68,18 @@ div.pullRightLeft a:after
 div.pullRightLeft a:hover:before, div.pullRightLeft a:hover:after
 {
     width: 100%;
-} */
+}
 
+
+@media screen and (max-width: 990px) {
+   .nav-link {
+     text-align: center;
+    }
+
+.js .pages-nav {
+    display: block;
+    text-align: center;
+    column-count: 2;
+    }
+
+}
