@@ -6,7 +6,7 @@ html,body{
     overflow-x: hidden;
 }
 nav{
-    border-top: 2px solid red;
+
     background: url(https://img.freepik.com/free-vector/abstract-blue-hexagon-shapes-dark-background_125759-111.jpg?size=626&ext=jpg);
 }
 .content{
@@ -32,6 +32,7 @@ nav{
     color: #ff5200 !important;
     transform: scale(1.1);
     transition: 200ms;
+    text-decoration: underline;
 }
 .pages-nav{
   margin-right: 0;
