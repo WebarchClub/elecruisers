@@ -3,4 +3,15 @@ $(document).ready(function(){
       // $("#mob").slideToggle(800);
       $(".content").toggleClass("reduced");
     });
-  });
+});
+
+function resize() {
+  if ($(window).width() < 768) {
+    $(".navbar-brand img").attr('src','the elecruisers.png');
+  } else {
+    $(".navbar-brand img").attr('src','logobw.png');
+  }
+}
+
+resize();
+$(window).on('resize', resize);
