@@ -11,7 +11,8 @@ nav{
 }
 .content{
     margin: 0 auto;
-    background: rgba(255, 0, 255, 0.4);
+    background: white;
+    /* rgba(255, 0, 255, 0.4) */
     width: 100%;
     transition: 1s;
     transition-timing-function: ease-in;
@@ -46,23 +47,28 @@ nav{
 }
 
 .js .pages-nav {
-    display: block;
+    display: inline-block;
   margin: auto;
     text-align: center;
-    column-count: 2;
-}
-}
-@media screen and (max-width: 990px){
-  .nav-link {
-    text-align: center;
+    /* column-count: 2; */
 
 }
 
-.js .pages-nav {
-   display: block;
-   text-align: center;
-   column-count: 2;
-     margin: auto;
+img{
+  width:120px;
+  height: 120px;
 }
+.main-col{
+  float: left;
+  width: 50%;
+display: inline-block;
+vertical-align: top;
+}
+.side-col{
+  float: right;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
 
+}
 }
