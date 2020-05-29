@@ -1,17 +1,16 @@
 $(document).ready(function(){
-    $("#menu-button").click(function(){
-      $(".nav-item").toggleClass("col-6");
-      $(".content").toggleClass("reduced");
-    });
+  $("#menu-button").click(function(){
+    $(".content").toggleClass("reduced");
+  });
 });
 
 function resize() {
-  if ($(window).width() < 768) {
-    $(".navbar-brand img").attr('src','logobw.png');
-  } else {
-    $(".navbar-brand img").attr('src','the elecruisers.png');
-
-  }
+if ($(window).width() < 990) {
+  $(".nav-item").addClass("col-6");
+} else {
+  $(".nav-item").removeClass("col-6");
 }
+}
+
 resize();
 $(window).on('resize', resize);
