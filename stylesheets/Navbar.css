@@ -5,6 +5,7 @@ html,body{
     margin: 0;
     overflow-x: hidden;
 }
+
 nav{
     background: url(https://img.freepik.com/free-vector/abstract-blue-hexagon-shapes-dark-background_125759-111.jpg?size=626&ext=jpg);
 }
@@ -72,7 +73,6 @@ nav{
     -webkit-transform: scale3d(0, 1, 1);
     transform: scale3d(0, 1, 1);
 }
-
 .link--page:hover:before {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
