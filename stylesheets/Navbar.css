@@ -23,8 +23,10 @@ nav{
     transition-timing-function: ease-out;
 }
 .nav-link{
+    margin: 0 5px;
+    padding: 5%;
     color: white !important;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 100;
     letter-spacing: 0.2em;
     font-family: sans-serif;
