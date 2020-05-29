@@ -60,5 +60,26 @@ nav{
   height: 100px;
  }
 
-/*  */
+
+}
+
+
+.link--page:not(.link--faded)::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 30px;
+    height: 2px;
+    margin: 1px 0 0 -15px;
+    background: #fff;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transform: scale3d(0, 1, 1);
+    transform: scale3d(0, 1, 1);
+}
+
+.link--page:hover:before {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
 }
