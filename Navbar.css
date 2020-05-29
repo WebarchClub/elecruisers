@@ -8,6 +8,7 @@ html,body{
 nav{
     background: url(https://img.freepik.com/free-vector/abstract-blue-hexagon-shapes-dark-background_125759-111.jpg?size=626&ext=jpg);
 }
+
 .content{
     margin: 0 auto;
     background: white;
@@ -46,29 +47,18 @@ nav{
 }
 
  .js .pages-nav {
-      margin-top: 3px;
+      margin-top: 0px;
       margin-bottom: 40px;
       columns: 2;
     }
 
+ .row {
+   top: 0px;
+ }
+ img{
+  width:80px;
+  height: 100px;
+ } 
 
-img{
-  width:120px;
-  height: 120px;
-}
-.main-col{
-  float: left;
-  width: 50%;
-  display: inline-block;
-  vertical-align: top;
-}
-.side-col{
-  top: 4px; 
-  float: right;
-  width: 50%;
-  display: inline-block;
-  vertical-align: top;
-
-}  
-
+/*  */
 }
