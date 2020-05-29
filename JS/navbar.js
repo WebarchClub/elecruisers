@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $("#menu-button").click(function(){
-      // $("#mob").slideToggle(800);
+      $(".nav-item").toggleClass("col-6");
       $(".content").toggleClass("reduced");
     });
 });

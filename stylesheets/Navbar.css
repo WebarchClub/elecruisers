@@ -15,12 +15,12 @@ nav{
     /* rgba(255, 0, 255, 0.4) */
     width: 100%;
     transition: 1s;
-    transition-timing-function: ease-in;
+    transition-timing-function: linear;
 }
 .reduced{
     width: 95%;
     transition: 1s;
-    transition-timing-function: ease-out;
+    transition-timing-function: linear;
 }
 .nav-link{
     color: white !important;
@@ -28,47 +28,4 @@ nav{
     font-weight: lighter;
     letter-spacing: 0.2em;
     font-family: sans-serif;
-}
-.nav-link:hover{
-    color: #ff5200 !important;
-    transform: scale(1.1);
-    transition: 200ms;
-    text-decoration: underline;
-}
-.pages-nav{
-  margin-right: 0;
-}
-
-
-
-@media screen and (max-width: 990px) {
-   .nav-link {
-     text-align: center;
-}
-
-.js .pages-nav {
-    display: inline-block;
-  margin: auto;
-    text-align: center;
-    /* column-count: 2; */
-
-}
-
-img{
-  width:120px;
-  height: 120px;
-}
-.main-col{
-  float: left;
-  width: 50%;
-  display: inline-block;
-  vertical-align: top;
-}
-.side-col{
-  float: right;
-  width: 50%;
-  display: inline-block;
-  vertical-align: top;
-
-}
 }
