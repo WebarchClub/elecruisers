@@ -5,6 +5,7 @@ html,body{
     margin: 0;
     overflow-x: hidden;
 }
+
 nav{
     background: url(https://img.freepik.com/free-vector/abstract-blue-hexagon-shapes-dark-background_125759-111.jpg?size=626&ext=jpg);
 }
@@ -22,8 +23,10 @@ nav{
     transition-timing-function: ease-out;
 }
 .nav-link{
+    margin: 0 5px;
+    padding: 5%;
     color: white !important;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 100;
     letter-spacing: 0.2em;
     font-family: sans-serif;
@@ -32,7 +35,6 @@ nav{
     color: #ff5200 !important;
     transform: scale(1.1);
     transition: 200ms;
-    text-decoration: underline;
 }
 .pages-nav{
   margin-right: 0;
@@ -72,7 +74,6 @@ nav{
     -webkit-transform: scale3d(0, 1, 1);
     transform: scale3d(0, 1, 1);
 }
-
 .link--page:hover:before {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
