@@ -12,7 +12,7 @@ nav{
 
 .content{
     margin: 0 auto;
-    background: white;
+    background: purple;
     width: 100%;
     transition: 1s;
     transition-timing-function: ease-in;
@@ -36,7 +36,7 @@ nav{
     transform: scale(1.1);
     transition: 200ms;
 }
-.pages-nav{
+.container{
   margin-right: 0;
 }
 @media screen and (max-width: 990px) {
@@ -44,7 +44,7 @@ nav{
      text-align: center;
     }
 
- .js .pages-nav {
+ .js .container {
       margin-top: 0px;
       margin-bottom: 20px;
       columns: 2;
@@ -60,7 +60,7 @@ nav{
 
 }
 
-.link--page:not(.link--faded)::before {
+.nav-link:not(.link--faded)::before {
     content: '';
     position: absolute;
     top: 100%;
@@ -74,7 +74,14 @@ nav{
     -webkit-transform: scale3d(0, 1, 1);
     transform: scale3d(0, 1, 1);
 }
-.link--page:hover:before {
+.nav-link:hover:before {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+}
+
+.nav-link{
+  -webkit-transition: -webkit-transform 1.2s, opacity 1.2s;
+	transition: transform 1.2s, opacity 1.2s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
