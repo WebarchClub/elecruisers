@@ -21,7 +21,7 @@ nav {
 .nav-link {
   margin: 0 5px;
   color: white !important;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 100;
   letter-spacing: 0.2em;
   font-family: sans-serif;
@@ -41,6 +41,7 @@ nav {
   .nav-link {
     text-align: center;
     padding-bottom: 30px;
+    font-size: 14px;
   }
 
   .js .container {
