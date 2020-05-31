@@ -16,7 +16,7 @@
 } */
 
 .footer-distributed {
-	position: absolute;
+	position: fixed;
 	background: rgba(245, 245, 245, 1);
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
