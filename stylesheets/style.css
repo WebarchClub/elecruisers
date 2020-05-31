@@ -1,10 +1,96 @@
-
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+body {
+	overflow-x: hidden;
+}
+html,
+body {
+	height: 100%;
+	/* position: relative; */
+	overflow-x: hidden;
+	/* min-height: calc(100vh-500px); */
+	min-height: 100%;
 }
 
-/* Footer */
+hr {
+	border-bottom: 1.5px solid #000;
+	margin: 0 8em;
+	outline: none;
+}
 
+.pages-stack {
+	overflow: hidden;
+	background: white;
+}
+
+/*
+#page-home {
+	/* min-height: calc(100vh-300px);  
+	overflow-y: hidden;
+} */
+
+/* Carousel */
+
+.carousel-item {
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	font-size: 25px;
+	margin-left: -4%;
+	margin-right: -4%;
+	position: absolute;
+}
+
+.hero {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 0px;
+	transform: translate(0%, -50%);
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Vision */
+
+/*
+.vision {
+	color: black;
+	width: 100%;
+}
+
+.vision h2 {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	text-align: center;
+}
+
+.vision p {
+	font-size: 16px;
+	padding: 0 50px;
+	text-align: center;
+
+	margin-bottom: 10%;
+} *?
+
+/*Sponsor Images*/
+
+.sponsors {
+	width: 100%;
+	height: 100%;
+}
+
+.thumbnail {
+	padding: 25px;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 50px;
+}
