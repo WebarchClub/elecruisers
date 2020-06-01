@@ -10,7 +10,22 @@ html,body{
   width: 100%;
   height: 100%;
 }
-
+#wrapper_class{ 
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0.2; 
+    }
+    50% { 
+        opacity: 0.9; 
+    }
+    100% { 
+        opacity: 1; 
+    } 
+} 
 body .vertical-centered-box {
   position: fixed;
   width: 100%;
