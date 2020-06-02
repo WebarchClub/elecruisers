@@ -10,9 +10,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<!-- FontAwesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <!-- Local CSS -->
+	<!-- Local CSS -->
+	<link rel="stylesheet" href="./stylesheets/loader.css">
 	<link rel="stylesheet" type="text/css" href="./stylesheets/Navbar.css" />
 	<link rel="stylesheet" href="./stylesheets/footer.css">
+	<link rel="stylesheet" href="./stylesheets/cars.css">
 	<link rel="stylesheet" href="./stylesheets/style.css">
 
 	<title>Elecruisers</title>
@@ -22,38 +24,47 @@
 
 </head>
 
-<body>
-	<!-- =====NAVBAR===== -->
+<body onload="load()">
+	<div id="wrapper">
+		<div id="particles-background" class="vertical-centered-box"></div>
+		<div id="particles-foreground" class="vertical-centered-box"></div>
+		<div class="preloader">
+			<div class="circle circle1"></div>
+			<div class="circle circle2"></div>
+			<div class="circle circle3"></div>
+		  </div>
+	</div>
+	<div style="display: none; text-align: center; transition: ease-in 2s;" id="wrapper_class" >
+		<!-- =====NAVBAR===== -->
 	<section id="Navigation">
 		<nav class="navbar navbar-expand-lg navbar-dark">
-			<a class="navbar-brand" href="#"><img src="the elecruisers.png" width="150" height="60" class="d-inline-block align-top"><h1 class="d-inline d-none"> </h1></a>
-
+			<a class="navbar-brand" href="#"><img src="the elecruisers.png" width="150" height="60" class="d-inline-block align-top"></a>
 			<button class="navbar-toggler" id="menu-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
+				<i class="fas fa-bars"></i>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<div class="collapse navbar-collapse circleBehind" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto flex-wrap flex-row">
 					<li class="nav-item active">
-					  <a class="nav-link link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link link" href="./index.html">HOME <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link link" href="#">About Us</a>
+						<a class="nav-link link" href="#">ABOUT US</a>
 					</li>
 					<li class="nav-item">
-					  <a class="nav-link link" href="#">Team</a>
+						<a class="nav-link link" href="#">TEAM</a>
 					</li>
 					<li class="nav-item">
-					  <a class="nav-link link" href="./cars.html">Cars</a>
+						<a class="nav-link link" href="./cars.html">CARS</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link link" href="#">Institute</a>
+						<a class="nav-link link" href="#">INSTITUTE</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link link" href="#">Support</a>
+						<a class="nav-link link" href="#">SUPPORT</a>
 					</li>
-				  </ul>
+				</ul>
 			</div>
-		  </nav>
+		</nav>
 	</section>
 	<!-- =====CONTENT===== -->
 	<section class="content">
@@ -112,8 +123,21 @@
 			</div>
 		</footer>
 	</section>
+	</div>
 
 	<!-- Optional JavaScript -->
+	<script>
+		var myVar;		
+		function load() {
+		  myVar = setTimeout(showload, 2500);
+		}		
+		function showload() {
+			$('#wrapper').fadeOut("slow");
+      		document.getElementById("wrapper_class").style.display = "block";
+		}
+	</script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+	<script src="./JS/loader.js"></script>
 	<script src="./JS/navbar.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
