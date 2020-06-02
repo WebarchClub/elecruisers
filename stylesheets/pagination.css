@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+* {box-sizing: border-box}
+html {background: #88bfd4; text-align: center}
+
+#menu {
+
+background: transparent;
+border-color: #88bfd4;
+	text-align: center;
+	display: inline-block;
+	height: 80px;
+	overflow: hidden;
+	border-radius: 5px;
+	top:40%;
+
+	padding-bottom: 20px;
+
+
+
+}
+
+
+
+.carimg{
+width: 15%;
+-webkit-filter: blur(1.2px);
+
+}
+.carimg:hover{
+width: 16%;
+
+-webkit-filter: blur(0px);
+
+}
+
+#menu li {
+	margin-left: 10px;
+	display: inline-block;
+	position: relative;
+
+}
+
+#menu li:first-child {margin: 0}
+
+#menu li a {
+	background: #a1d0dd;
+
+	padding: 0 12px;
+	color: white;
+	position: relative;
+	text-decoration: none;
+	height: 30px;
+	font: 12px / 27px "PT Sans", Arial, sans-serif;
+	box-shadow: 0px 3px #7fafbc, 0px 4px 5px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s ease;
+}
+
+
+#menu li a:hover {background: #bae0ea}
+#menu li a:active {
+	background: #bae0ea;
+
+}
+
+.carpage{
+text-align: center;
+
+}
