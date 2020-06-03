@@ -128,7 +128,7 @@ html.js,
 
 .js .pages-stack {
 	z-index: 100;
-	pointer-events: none;
+	/* pointer-events: none; */
 	-webkit-perspective: 1200px;
 	perspective: 1350px;
 	-webkit-perspective-origin: 50% -50%;

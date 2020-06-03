@@ -51,32 +51,49 @@ hr {
 	top: 50%;
 	left: 0px;
 	transform: translate(0%, -50%);
-	font-family: 'Josefin Sans', sans-serif;
+	/* font-family: 'Josefin Sans', sans-serif; */
 }
 
 /* Vision */
 
-/*
 .vision {
-	color: black;
+	background-color: black;
+	color: white;
 	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-bottom: 10%;
 }
-
 .vision h2 {
+	text-transform: uppercase;
 	margin-top: 5%;
 	margin-bottom: 5%;
 	text-align: center;
+	font-weight: bold;
+	letter-spacing: 10px;
+}
+.vision p {
+	margin-bottom: 2.5%;
+	font-size: 17px;
+	text-align: center;
+	padding: 0 100px;
 }
 
-.vision p {
-	font-size: 16px;
-	padding: 0 50px;
-	text-align: center;
+/* Vision Video */
 
-	margin-bottom: 10%;
-} */
+.section-vision-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 50px;
+	margin-right: 50px;
+	min-width: 400px;
+}
 
-/*Sponsor Images*/
+/*Sponsor Images
 
 .sponsors {
 	width: 100%;
@@ -93,7 +110,35 @@ hr {
 	justify-content: center;
 	flex-wrap: wrap;
 	margin: 50px;
+} */
+
+/* 3D!!!!! Sponsors carousel 
+
+.sponsors {
+	background: teal;
+	height: 100vh;
+	width: 100%;
 }
+
+.sponsor-carousel {
+	height: 700px !important;
+}
+.sponsor-carousel-item {
+	display: flex;
+	align-items: start;
+	justify-content: center;
+}
+
+.sponsor-carousel-item img {
+	width: 500px !important;
+	height: auto !important;
+}
+
+@media (max-width: 700px) {
+	.sponsor-carousel-item img {
+		width: 400px !important;
+	}
+}  */
 
 /* Contact Form */
 
@@ -110,8 +155,9 @@ hr {
 	margin: 0 auto;
 	padding-top: 50px;
 	margin-bottom: 50px;
-	font: 300 60px 'Oswald', sans-serif;
-	letter-spacing: 6px;
+	/* font: 500 60px 'Oswald', sans-serif; */
+	font-weight: bold;
+	letter-spacing: 10px;
 	color: #fff;
 	margin-bottom: 25px;
 }
@@ -127,7 +173,7 @@ hr {
 .form-horizontal {
 	float: left;
 	max-width: 400px;
-	font-family: 'Lato';
+	/* font-family: 'Lato'; */
 	font-weight: 400;
 }
 
@@ -180,13 +226,13 @@ textarea {
 	padding-right: 20px;
 }
 
-.list-item {
+.contact-list-item {
 	line-height: 4;
 	color: #aaa;
 }
 
 .contact-text {
-	font: 300 18px 'Lato', sans-serif;
+	font: 300 18px 'Montserrat', sans-serif;
 	letter-spacing: 1.9px;
 	color: #bbb;
 }
@@ -283,6 +329,7 @@ hr {
 }
 
 /* Begin Media Queries*/
+
 @media screen and (max-width: 760px) {
 	#contact {
 		height: 1000px;
