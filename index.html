@@ -11,8 +11,10 @@
 	<!-- FontAwesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 	<!-- Local CSS -->
+	<link rel="stylesheet" href="./stylesheets/loader.css">
 	<link rel="stylesheet" type="text/css" href="./stylesheets/Navbar.css" />
 	<link rel="stylesheet" href="./stylesheets/footer.css">
+	<link rel="stylesheet" href="./stylesheets/cars.css">
 	<link rel="stylesheet" href="./stylesheets/style.css">
 
 	<title>Elecruisers</title>
@@ -22,44 +24,45 @@
 
 </head>
 
-<body>
-	<!-- =====NAVBAR===== -->
+<body onload="load()">
+	<div id="wrapper">
+		<div id="particles-background" class="vertical-centered-box"></div>
+		<div id="particles-foreground" class="vertical-centered-box"></div>
+		<div class="preloader">
+			<div class="circle circle1"></div>
+			<div class="circle circle2"></div>
+			<div class="circle circle3"></div>
+		  </div>
+	</div>
+	<div style="display: none; text-align: center; transition: ease-in 2s;" id="wrapper_class" >
+		<!-- =====NAVBAR===== -->
 	<section id="Navigation">
 		<nav class="navbar navbar-expand-lg navbar-dark">
-
-
-
-			<a class="navbar-brand" href="#"><img src="the elecruisers.png" width="150" height="60" class="d-inline-block align-top">
-				<h1 class="d-inline d-none"> </h1>
-			</a>
-
+			<a class="navbar-brand" href="#"><img src="the elecruisers.png" width="150" height="60" class="d-inline-block align-top"></a>
 			<button class="navbar-toggler" id="menu-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+				<i class="fas fa-bars"></i>
 			</button>
-
-			<div class="container circleBehind">
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ml-auto flex-wrap flex-row">
-						<li class="nav-item active">
-							<a class="nav-link link" href="#">HOME <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link link" href="#">ABOUT US</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link link" href="#">TEAM</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link link" href="#">CARS</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link link" href="#">INSTITUTE</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link link" href="#">SUPPORT</a>
-						</li>
-					</ul>
-				</div>
+			<div class="collapse navbar-collapse circleBehind" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto flex-wrap flex-row">
+					<li class="nav-item active">
+						<a class="nav-link link" href="./index.html">HOME <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link" href="#">ABOUT US</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link" href="#">TEAM</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link" href="./cars.html">CARS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link" href="#">INSTITUTE</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link" href="#">SUPPORT</a>
+					</li>
+				</ul>
 			</div>
 		</nav>
 	</section>
@@ -67,27 +70,15 @@
 	<section class="content">
 		<div class="row">
 			<div class="col-4"><img src="logobw.png" alt="" class="img-fluid"></div>
-			<div class="col-8">
-				<h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum autem esse adipisci rerum repellat ullam, quis at velit ipsum vitae, consequuntur error soluta? Libero fugiat eaque, laborum quaerat dolor reprehenderit dolores repellat
-					deserunt officia alias perspiciatis deleniti hic unde ducimus! Consequatur necessitatibus voluptatum omnis aspernatur asperiores inventore veniam reprehenderit dicta doloribus atque incidunt obcaecati voluptas eius maiores, delectus
-					voluptatem optio vitae minima et quo. Iusto sint neque nemo aliquam obcaecati ullam fugit? Consequatur soluta blanditiis sit amet officiis animi eos.</h3>
-			</div>
+			<div class="col-8"><h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum autem esse adipisci rerum repellat ullam, quis at velit ipsum vitae, consequuntur error soluta? Libero fugiat eaque, laborum quaerat dolor reprehenderit dolores repellat deserunt officia alias perspiciatis deleniti hic unde ducimus! Consequatur necessitatibus voluptatum omnis aspernatur asperiores inventore veniam reprehenderit dicta doloribus atque incidunt obcaecati voluptas eius maiores, delectus voluptatem optio vitae minima et quo. Iusto sint neque nemo aliquam obcaecati ullam fugit? Consequatur soluta blanditiis sit amet officiis animi eos.</h3></div>
 		</div>
 		<div class="row">
 			<div class="col-4"><img src="logobw.png" alt="" class="img-fluid"></div>
-			<div class="col-8">
-				<h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum autem esse adipisci rerum repellat ullam, quis at velit ipsum vitae, consequuntur error soluta? Libero fugiat eaque, laborum quaerat dolor reprehenderit dolores repellat
-					deserunt officia alias perspiciatis deleniti hic unde ducimus! Consequatur necessitatibus voluptatum omnis aspernatur asperiores inventore veniam reprehenderit dicta doloribus atque incidunt obcaecati voluptas eius maiores, delectus
-					voluptatem optio vitae minima et quo. Iusto sint neque nemo aliquam obcaecati ullam fugit? Consequatur soluta blanditiis sit amet officiis animi eos.</h3>
-			</div>
+			<div class="col-8"><h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum autem esse adipisci rerum repellat ullam, quis at velit ipsum vitae, consequuntur error soluta? Libero fugiat eaque, laborum quaerat dolor reprehenderit dolores repellat deserunt officia alias perspiciatis deleniti hic unde ducimus! Consequatur necessitatibus voluptatum omnis aspernatur asperiores inventore veniam reprehenderit dicta doloribus atque incidunt obcaecati voluptas eius maiores, delectus voluptatem optio vitae minima et quo. Iusto sint neque nemo aliquam obcaecati ullam fugit? Consequatur soluta blanditiis sit amet officiis animi eos.</h3></div>
 		</div>
 		<div class="row">
 			<div class="col-4"><img src="logobw.png" alt="" class="img-fluid"></div>
-			<div class="col-8">
-				<h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum autem esse adipisci rerum repellat ullam, quis at velit ipsum vitae, consequuntur error soluta? Libero fugiat eaque, laborum quaerat dolor reprehenderit dolores repellat
-					deserunt officia alias perspiciatis deleniti hic unde ducimus! Consequatur necessitatibus voluptatum omnis aspernatur asperiores inventore veniam reprehenderit dicta doloribus atque incidunt obcaecati voluptas eius maiores, delectus
-					voluptatem optio vitae minima et quo. Iusto sint neque nemo aliquam obcaecati ullam fugit? Consequatur soluta blanditiis sit amet officiis animi eos.</h3>
-			</div>
+			<div class="col-8"><h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum autem esse adipisci rerum repellat ullam, quis at velit ipsum vitae, consequuntur error soluta? Libero fugiat eaque, laborum quaerat dolor reprehenderit dolores repellat deserunt officia alias perspiciatis deleniti hic unde ducimus! Consequatur necessitatibus voluptatum omnis aspernatur asperiores inventore veniam reprehenderit dicta doloribus atque incidunt obcaecati voluptas eius maiores, delectus voluptatem optio vitae minima et quo. Iusto sint neque nemo aliquam obcaecati ullam fugit? Consequatur soluta blanditiis sit amet officiis animi eos.</h3></div>
 		</div>
 	</section>
 	<!-- =====FOOTER===== -->
@@ -102,8 +93,7 @@
 					<a href="#">Institute</a>
 					<a href="#">Support</a>
 				</p>
-				<p class="footer-company-name"> <span>Developed <img src="./webarch_logo.png" alt="webarch-Logo" height="25px" width="25px"> <span>by</span> <a href="https://webarchsrm.com" target="_blank" class="font-weight-bolder"><i><span
-									class="text-dark webarch"> WEBARCH<span></i></a></span></p>
+				<p class="footer-company-name">            <span>Developed <img src="./webarch_logo.png" alt="webarch-Logo" height="25px" width="25px"> <span>by</span> <a href="https://webarchsrm.com" target="_blank" class="font-weight-bolder"><i><span class="text-dark webarch"> WEBARCH<span></i></a></span></p>
 			</div>
 			<div class="footer-center">
 				<div>
@@ -133,11 +123,24 @@
 			</div>
 		</footer>
 	</section>
+	</div>
 
 	<!-- Optional JavaScript -->
+	<script>
+		var myVar;		
+		function load() {
+		  myVar = setTimeout(showload, 2500);
+		}		
+		function showload() {
+			$('#wrapper').fadeOut("slow");
+      		document.getElementById("wrapper_class").style.display = "block";
+		}
+	</script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+	<script src="./JS/loader.js"></script>
 	<script src="./JS/navbar.js"></script>
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 </html
