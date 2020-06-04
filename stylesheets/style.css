@@ -18,7 +18,7 @@ hr {
 
 .pages-stack {
 	overflow: hidden;
-	background: white;
+	background: #000;
 }
 
 /*
@@ -27,7 +27,7 @@ hr {
 	overflow-y: hidden;
 } */
 
-/* Carousel */
+/* Page Carousel */
 
 .carousel-item {
 	height: 100vh;
@@ -53,6 +53,8 @@ hr {
 	transform: translate(0%, -50%);
 	/* font-family: 'Josefin Sans', sans-serif; */
 }
+
+/* Full Page Carousel End */
 
 /* Vision */
 
@@ -85,13 +87,115 @@ hr {
 /* Vision Video */
 
 .section-vision-container {
+	pointer-events: all;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-left: 50px;
 	margin-right: 50px;
-	min-width: 400px;
+	max-width: 100%;
+	margin-bottom: 10px;
+	max-height: 100%;
 }
+
+/* Vision End */
+
+/* Sponsor Carousel */
+
+.sponsors {
+	background: #111;
+	height: 100vh;
+	width: 100%;
+}
+
+.gallery {
+	top: 200px;
+}
+
+.gallery-cell {
+	width: 36%;
+	height: 240px;
+	margin-right: 20px;
+	margin-left: 20px;
+	border-radius: 30px;
+	counter-increment: gallery-cell;
+	/* box-shadow: 5px 5px 5px 6px rgba(0, 0, 0, 0.6) */
+}
+.gallery-cell:nth-child(1) {
+	background: url("../sponsor-images/413.png") center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	-webkit-backdrop-filter: blur(10px);
+}
+
+.gallery-cell:nth-child(2) {
+	background: url("../sponsor-images/bender.png") center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.gallery-cell:nth-child(3) {
+	background: url("../sponsor-images/burnout.png") center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.gallery-cell:nth-child(4) {
+	background: url("../sponsor-images/east.png") center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.gallery-cell:nth-child(5) {
+	background: url("../sponsor-images/genuine.png") center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.gallery-cell:nth-child(6) {
+	background: url("../sponsor-images/indian oil.png") center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.gallery-cell:nth-child(7) {
+	background: url("../sponsor-images/mathworks.png") center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.gallery-cell:nth-child(8) {
+	background: url("../sponsor-images/proj.png") center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.gallery-cell:nth-child(9) {
+	background: url("../sponsor-images/solid.png") center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.gallery-cell:nth-child(10) {
+	background: url("../sponsor-images/sparkfun.png") center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+/* cell number */
+.gallery-cell:before {
+	display: block;
+	text-align: center;
+
+	line-height: 200px;
+	font-size: 80px;
+	color: black;
+}
+@media (max-width: 600px) {
+	.gallery-cell {
+		width: 80%;
+	}
+}
+
+/* Sponsor Carousel End */
 
 /*Sponsor Images
 
@@ -145,7 +249,7 @@ hr {
 #contact {
 	width: 100%;
 	height: 100vh;
-	background-color: #111;
+	background-color: #121212;
 	overflow: hidden;
 	padding-bottom: 200px;
 }
@@ -359,6 +463,11 @@ hr {
 }
 
 @media screen and (max-width: 569px) {
+	.section-vision-container {
+		flex: 0 0 40%;
+		margin: 0;
+	}
+
 	#contact {
 		height: 1200px;
 	}
