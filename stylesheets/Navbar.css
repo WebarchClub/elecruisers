@@ -1,85 +1,103 @@
-html,body{
-    width: 100%;
-    height: 100%;
-    background-color: #1f4068;
-    margin: 0;
-    overflow-x: hidden;
-}
-nav{
-    background: url(https://img.freepik.com/free-vector/abstract-blue-hexagon-shapes-dark-background_125759-111.jpg?size=626&ext=jpg);
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  margin: 0;
+  overflow-x: hidden;
 }
 
-.content{
-    margin: 0 auto;
-    background: white;
-    /* rgba(255, 0, 255, 0.4) */
-    width: 100%;
-    transition: 1s;
-    transition-timing-function: ease-in;
+nav {
+  background: url(https://img.freepik.com/free-vector/abstract-blue-hexagon-shapes-dark-background_125759-111.jpg?size=626&ext=jpg);
 }
-.reduced{
-    width: 95%;
-    transition: 1s;
-    transition-timing-function: ease-out;
+.navbar-toggler{
+  outline: none;
+  border: none;
 }
-.nav-link{
-    color: white !important;
-    font-size: 20px;
-    font-weight: lighter;
-    letter-spacing: 0.2em;
-    font-family: sans-serif;
+.fa-bars{
+  color: white;
+  font-size: 40px;
 }
-.nav-link:hover{
-    color: #ff5200 !important;
-    transform: scale(1.1);
-    transition: 200ms;
-    text-decoration: underline;
+.navbar-toggler:focus{
+  outline: none;
+  border: none;
 }
-.pages-nav{
-  margin-right: 0;
+.navbar-toggler:active{
+  transform: scale(0.9);
 }
 
+.content {
+  margin: 0 auto;
+  /* background: white;
+   */
+      background-image:
+      linear-gradient(45deg, rgb(245, 231, 231) 25%, transparent 25%, transparent 75%, rgb(233, 213, 213) 75%),
+      linear-gradient(45deg, rgb(233, 215, 215) 25%, rgb(184, 181, 181) 25%, rgb(187, 185, 185) 75%, rgb(247, 240, 240) 75%);
+    
+      background-size: 50px 50px;
+      
+      background-position:
+        0 0,
+        25px 25px;
+  
+  width: 100%;
+  transition: 1s;
+  transition-timing-function: ease-in;
+}
 
+.nav-link {
+  margin: 0 5px;
+  color: white !important;
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  font-family: sans-serif;
+}
 
+.nav-link:hover {
+  color: #ffd700 !important;
+  transform: scale(1.1);
+  transition: 200ms;
+}
 @media screen and (max-width: 990px) {
-   .nav-link {
-     text-align: center;
+  .nav-link {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 14px;
+  }
+  .navbar-brand img {
+    width: 200px;
+    height: 100px;
+  }
 }
 
- .js .pages-nav {
-      margin-top: 0px;
-      margin-bottom: 20px;
-      columns: 2;
-    }
-
- .row {
-   top: 0px;
- }
- img{
-  width:150px;
-  height: 100px;
- }
-
-
+/* Circle behind */
+div.circleBehind a:before, div.circleBehind a:after {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border: 4px solid #0277bd;
+  transform: translateX(-50%) translateY(-50%) scale(0.8);
+  border-radius: 50%;
+  background: transparent;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: -1;
 }
 
-
-.link--page:not(.link--faded)::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    width: 30px;
-    height: 2px;
-    margin: 1px 0 0 -15px;
-    background: #fff;
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    -webkit-transform: scale3d(0, 1, 1);
-    transform: scale3d(0, 1, 1);
+div.circleBehind a:after {
+  border-width: 2px;
+  transition: all 0.4s;
 }
 
-.link--page:hover:before {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+div.circleBehind a:hover:before {
+  opacity: 0.6;
+  transform: translateX(-50%) translateY(-50%) scale(1);
+  }
+
+div.circleBehind a:hover:after {
+  opacity: 0.6;
+  transform: translateX(-50%) translateY(-50%) scale(1.3);
 }
