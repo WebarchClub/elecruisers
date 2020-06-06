@@ -1,24 +1,6 @@
 html{
     scroll-behavior: smooth;
 }
-body{
-    margin-top: 0;
-    background: linear-gradient(-45deg,#006699,#000044,#003545,#000000);
-    background-size: 400% 400%;
-    height: 100%;
-    animation: gradient 5s ease infinite;
-}
-@keyframes gradient{
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
 #topcar h2{
     font-family: 'Black Ops One', cursive;
 }
