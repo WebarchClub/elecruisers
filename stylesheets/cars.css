@@ -2,17 +2,20 @@ html{
     scroll-behavior: smooth;
 }
 .info{
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
-#topcar h2{
+#topcar .name{
     font-family: 'Black Ops One', cursive;
+    font-size: 2em;
 }
-#topcar h3{
-    text-align:justify;
+#topcar .title{
+    margin: 0.5em auto;
     font-family: 'Hammersmith One', sans-serif;
+    font-size: 1.8em;
 }
 #topcar p{
-    font-size: 1.4rem;
+    line-height: 1.8em;
+    font-size: 1.2em;
 }
 .carcontainer{
     width: 70%;
@@ -89,30 +92,46 @@ cursor: pointer;
     padding-left: 60px;
 }
 @media screen and (max-width: 1155px) {
-    .car-overlay{
-        font-size: 1rem;
-        width: 100%;
-        left: -100%;
+    #topcar .name{
+        font-size: 1.4em;
     }
-    .car-parent:hover .car-main{
-        transform: translateX(100%);
+    #topcar .title{
+        margin: 0.4em auto;
+        font-size: 1.4em;
     }
-}
-@media screen and (max-width: 1155px) {
-    .car-overlay{
-        font-size: 1.5em;
-        width: 100%;
-        left: -100%;
+    #topcar p{
+        font-size: 0.7em;
+        text-align: center;
+        line-height: 2em;
     }
-    .car-parent:hover .car-main{
-        transform: translateX(100%);
+    .info{
+        font-size: 0.7em;
     }
 }
 @media screen and (max-width: 820px) {
+    .car-overlay{
+        width: 100%;
+        left: -100%;
+    }
+    .car-parent:hover .car-main{
+        transform: translateX(100%);
+    }
     .carcontainer{
         width: 100%;
     }
-    .car-overlay{
+    #topcar .name{
+        font-size: 1.8em;
+    }
+    #topcar .title{
+        margin: 0.5em auto;
+        font-size: 1.8em;
+    }
+    #topcar p{
+        font-size: 1.4em;
+        text-align: center;
+        line-height: 2em;
+    }
+    .info{
         font-size: 1.2em;
     }
 }
@@ -120,21 +139,60 @@ cursor: pointer;
     #slider label a{
         font-size: 0.4em;
     }
-    .car-overlay{
-        font-size: 0.8em;
+    #topcar .name{
+        font-size: 1.8em;
+    }
+    #topcar .title{
+        margin: 0.5em auto;
+        font-size: 1.8em;
+    }
+    #topcar p{
+        font-size: 1em;
+        text-align: center;
+        line-height: 2em;
+    }
+    .info{
+        font-size: 1em;
     }
 }
-@media screen and (max-width: 470px) {
-    .car-overlay{
-        font-size: 0.6em;
-    }
+@media screen and (max-width: 530px) {
     .car-more{
         font-size: 0.8rem;
     }
+    #topcar .name{
+        font-size: 1.5em;
+    }
+    #topcar .title{
+        margin: 0.2em auto;
+        font-size: 1.5em;
+    }
+    #topcar p{
+        font-size: 0.8em;
+        text-align: center;
+        line-height: 1.5em;
+    }
+    .info{
+        font-size: 0.8em;
+    }    
 }
-@media screen and (max-width: 360px) {
-    .car-overlay{
-        font-size: 0.4em;
+@media screen and (max-width: 360px){
+    #topcar .name{
+        font-size: 0.7em;
+    }
+    #topcar .name{
+        font-size: 1.2em;
+    }
+    #topcar .title{
+        margin: 0.2em auto;
+        font-size: 1.2em;
+    }
+    #topcar p{
+        font-size: 0.6em;
+        text-align: center;
+        line-height: 1.5em;
+    }
+    .info{
+        font-size: 0.6em;
     }
 }
 
