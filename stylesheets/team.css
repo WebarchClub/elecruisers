@@ -30,11 +30,10 @@ p {
 .two {
     list-style: none;
     padding: 0;
-    margin: 30px 50px;
+    margin: 30px;
 }
 .two > li {
-    background-image: url('https://img.freepik.com/free-photo/blue-with-vignette-marble-texture-background-with-copy-space_23-2148327728.jpg?size=626&ext=jpg');
-    border: 1px solid rgba(150,150,150,0.29);
+    background-image: url('https://images.unsplash.com/photo-1572557798994-41431698dc8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
     -moz-box-shadow: 0px 0px 18px 0px rgba(103,85,85,0.39);
     box-shadow: 0px 0px 18px 0px rgba(103,85,85,0.39);
     width: 250px;
@@ -58,23 +57,23 @@ p {
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
-    bottom: -400px;
-  }
+    bottom: -400px;    
+  } 
   .two > li:hover h3 {
     color: rgba(255,255,255,1);
-    margin-top: 25px;
+    margin-top: 15px;
   }
   .two > li .wrapper {
     overflow: hidden;
     position: absolute;
     width: 250px;
-    height: 430px;
+    height: 430px;    
   }
   .two > li span {
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-    height: 500px;
+    height: 480px;
     width: 500px;
     background: #000;
     display: block;
@@ -95,7 +94,7 @@ p {
     display: inline-block;
   }
   .two > li h3 {
-    margin-top: 40px;
+    margin-top: 70px;
     color: rgba(255,255,255,1);
   }
   .two > li h3 em {
@@ -109,8 +108,8 @@ p {
   .two .social {
     list-style: none;
     text-align: center;
-    margin: 10px 0 0 0;
-    padding: 10px;
+    margin: 10 0 0 0;
+    padding: 10px;    
   }
   .two .social li {
     opacity: 0;
@@ -174,18 +173,11 @@ p {
     margin-top: 0px;
   }
   }
-
-
-
-
 /* Heading  */
   @font-face {
     font-family: Clip;
     src: url("https://acupoftee.github.io/fonts/Clip.ttf");
-  }
-  
-
-  
+  }  
   .sign {
     
     display: flex;
@@ -196,8 +188,7 @@ p {
       ellipse 50% 35% at 50% 50%,
       
       transparent
-    );
-    
+    );    
     letter-spacing: 2;
     left: 50%;
     top: 20%;
@@ -209,8 +200,7 @@ p {
       -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
       0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
     animation: shine 2s forwards, flicker 3s infinite;
-  }
-  
+  }  
   @keyframes blink {
     0%,
     22%,
