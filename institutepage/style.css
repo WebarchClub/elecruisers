@@ -137,3 +137,9 @@ i {
     text-decoration: none;
     color: #414141;
 }
+
+@media(max-width:576px) {
+    .parent {
+        left: 1.5em;
+    }
+}
