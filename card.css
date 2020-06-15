@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:700|Noticia+Text:400i&display=swap");
+.container {
+  padding-top: 100px;
+
+}
+
+body {
+  /* center the article in the viewport */
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  /* include an off-white background */
+  background: hsl(250, 85%, 97%);
+ 
+}
+
+article {
+ height: 350px;
+  
+  /* display the contents in a column */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #204051;
+  
+  border-radius: 10px;
+  
+  
+  box-shadow: 0 0 5px -2px hsla(0, 0%, 0%, 0.1);
+}
+article figure {
+  /* limit the width and height of the figure to show the image in a circle */
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  /* specify negative margin matching half the height of the element */
+  margin-top: -60px;
+  /* position relative for the pseudo element */
+  position: relative;
+  
+  
+}
+
+article figure img {
+  /* stretch the image to cover the size of the wrapping container */
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  /* object fit to maintain the aspect ratio and fit the width/height */
+  object-fit: cover;
+  
+}
+
+article div {
+  /* center the text in the div container */
+  text-align: center;
+  margin: 1.5rem;
+}
+article div p {
+  color: white;
+  font-weight: 400;
+  font-style: italic;
+  /* margin: 1rem 0 3rem; */
+  font-family: "Noticia Text", serif;
+  /* position relative for the pseudo element */
+  position: relative;
+  z-index: 5;
+}
+
+article div h1 {
+  /* considerably reduce the size of the heading */
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  
+}
+.margin {
+    padding-top: 45px;
+}
+
+
+@media screen and (max-width: 990px) {
+    article {
+      margin-top: 90px;
+      
+      }
+  }
