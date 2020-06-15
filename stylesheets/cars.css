@@ -12,6 +12,7 @@ html{
     margin: 0.5em auto;
     font-family: 'Hammersmith One', sans-serif;
     font-size: 1.8em;
+    color: #0a97b0;
 }
 #topcar p{
     line-height: 1.8em;
@@ -76,18 +77,22 @@ cursor: pointer;
     width: 100%;
     height: 100%;
     background: #191919;
-     color: #7FFFD4;
+    color: white;
     margin-bottom: 5%;
-    font-size:1.5rem;
+    font-size:1.1em;
     text-align: center;
-   font-family: 'Roboto Slab', serif;
+   font-family: 'Hammersmith One', sans-serif;
+}
+.top{
+    font-family: 'Black Ops One', cursive;
+    color: #0a97b0;
 }
 
 .car-overlay li{
     list-style: none;
 }
 .car-slide .col-6, .car-slide .col-6{
-    padding: 20px 20px;
+    padding: 12px 20px;
     text-align: left;
     padding-left: 60px;
 }
@@ -245,14 +250,14 @@ cursor: pointer;
     transform: translate3d(80%,0,-100px);
 }
 #slide1{
-    background: url("../Car2.jpg");
+    background: url("../images/ECR-1.png");
     background-size: cover;
 }
 #slide2{
-    background: url("../Car2.jpg");
+    background: url("../images/ECR-2.jpg");
     background-size: cover;
 }
 #slide3{
-    background: url("../Car2.jpg");
+    background: url("../images/ECR-3.png");
     background-size: cover;
 }
