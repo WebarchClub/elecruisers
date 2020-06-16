@@ -1,0 +1,98 @@
+#wrapper_class{ 
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0.2; 
+    }
+    50% { 
+        opacity: 0.9; 
+    }
+    100% { 
+        opacity: 1; 
+    } 
+} 
+body .vertical-centered-box {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+body .vertical-centered-box:after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+body .vertical-centered-box .content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 0;
+}
+
+#particles-background,
+#particles-foreground {
+  left: -51%;
+  top: -51%;
+  width: 202%;
+  height: 202%;
+  -webkit-transform: scale3d(0.5, 0.5, 1);
+  -moz-transform: scale3d(0.5, 0.5, 1);
+  -ms-transform: scale3d(0.5, 0.5, 1);
+  -o-transform: scale3d(0.5, 0.5, 1);
+  transform: scale3d(0.5, 0.5, 1);
+}
+#particles-background {
+  background: transparent;
+  background-image: -moz-linear-gradient(45deg, black 100%, #000000 100%);
+  background-image: -webkit-linear-gradient(45deg, black 100%, #000000 100%);
+  background-image: linear-gradient(45deg, rgb(0, 0, 0) 100%, #000000 100%);
+}
+.preloader {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 10;
+  position: fixed;
+  text-align: center;
+}
+
+.circle {
+  border-radius: 190px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+}
+
+.circle1 {
+  background-color: rgba(0, 0, 59, 0.8);
+  width: 150px;
+  height: 150px;
+  margin-top: -80px;
+  margin-left: -80px;
+}
+
+.circle2 {
+  background-color: rgb(0, 0, 137);
+  width: 80px;
+  height: 80px;
+  margin-top: -45px;
+  margin-left: -45px;
+}
+
+.circle3 {
+  background-color: rgb(0, 0, 255);
+  width: 16px;
+  height:16px;
+  margin-top: -13px;
+  margin-left: -13px;
+}
