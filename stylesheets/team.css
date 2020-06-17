@@ -45,10 +45,13 @@ p {
     font-weight: bold;
   }
   .two > li img {
-    margin-top: 60px;
+    margin-top: 50px;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
   }
   .two > li:hover img {
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .two > li:hover {
     -moz-box-shadow: 0px 0px 5px 0px rgba(103,85,85,0.25);
@@ -109,14 +112,16 @@ p {
   .two .social {
     list-style: none;
     text-align: center;
-    margin: 10 0 0 0;
+    /* margin: 10 0 0 0; */
     padding: 10px;    
   }
   .two .social li {
     opacity: 0;
-    padding: 5px;
-    display: inline-block;
+    padding-top: 30px;    
+    /* display: inline-block; */    
   }
+
+
   .two > li:hover .social li {
     opacity: 0.9;
   }
@@ -190,7 +195,7 @@ p {
     letter-spacing: 2;
     left: 50%;
     top: 20%;
-    font-family: "Paperclip";
+    font-family: "Paperclip" !important;
     text-transform: uppercase;
     font-size: 3em;
     color: #ffe6ff;
