@@ -250,14 +250,14 @@ cursor: pointer;
     transform: translate3d(80%,0,-100px);
 }
 #slide1{
-    background: url("../images/ECR-1.png");
+    background: url("../images/vehicles/ECR-1.png");
     background-size: cover;
 }
 #slide2{
-    background: url("../images/ECR-2.jpg");
+    background: url("../images/vehicles/ECR-2.jpg");
     background-size: cover;
 }
 #slide3{
-    background: url("../images/ECR-3.png");
+    background: url("../images/vehicles/ECR-3.png");
     background-size: cover;
 }
