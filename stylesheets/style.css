@@ -14,7 +14,7 @@ body {
 }
 
 .carousel-item {
-	height: 100vh;
+	height: 90vh;
 	max-width: 100%;
 	background-size: cover;
 	background-position: center center;
@@ -675,6 +675,9 @@ hr {
 		height: 50vh;
 		/* background-size: contain; */
 	}
+	.carousel-item{
+		height: 60vh;
+	}
 
 	.carousel-caption h3,
 	.carousel-caption p {
@@ -741,6 +744,9 @@ hr {
 
 	.carousel-6-img {
 		height: 35vh;
+	}
+	.carousel-item{
+		height: 40vh;
 	}
 
 	#contact {
