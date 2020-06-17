@@ -35,7 +35,8 @@ db.collection("team")
         <img class="transition img-fluid" src="${person.photo}" />
         <ul class="social">
           <li>
-            Find her on:<br>
+            Find me on:<br>
+            <br>
           </li>
           <a class="btn btn-social-icon btn-github" href="${person.git}"><i class="fa fa-github fa-lg"></i></a>
           <a class="btn btn-social-icon btn-linkedin" href="${person.lnkdn}"><i class="fa fa-linkedin fa-lg"></i></a>               
