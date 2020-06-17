@@ -32,35 +32,18 @@ db.collection("team")
             var div1 = document.createElement("li");
             div1.className = "transition";
             div1.innerHTML = `<div class="wrapper">
-        <img class="transition" src="${person.photo}" />
+        <img class="transition img-fluid" src="${person.photo}" />
+        <ul class="social">
+          <li>
+            Find her on:<br>
+          </li>
+          <a class="btn btn-social-icon btn-github" href="${person.git}"><i class="fa fa-github fa-lg"></i></a>
+          <a class="btn btn-social-icon btn-linkedin" href="${person.lnkdn}"><i class="fa fa-linkedin fa-lg"></i></a>               
+          <a class="btn btn-social-icon btn-instagram" href="${person.insta}"><i class="fa fa-instagram fa-lg"></i></a>
+        </ul>
       <span class="transition">
         <h3>${person.Name} <em>${person.Role}</em></h3>
       </span>
-
-
-        <ul class="social">
-          <li>
-            <a
-              href="${person.insta}"
-              target="_blank"
-              ><i class="fab fa-instagram fa-2x"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="${person.git}"
-              target="_blank"
-              ><i class="fab fa-github fa-2x"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="${person.lnkdn}"
-              target="_blank"
-              ><i class="fab fa-linkedin fa-2x"></i
-            ></a>
-          </li>
-        </ul>
     </div>`;
             document.querySelector(".two").appendChild(div1);
         });
