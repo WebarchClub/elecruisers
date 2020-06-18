@@ -242,7 +242,7 @@ body {
 		height: 80vh;
 	}
 	.carousel-6-img img {
-		object-fit: fill;
+		object-fit: contain;
 		padding-top: 0px;
 		display: inline-block;
 		margin: auto;
@@ -649,6 +649,7 @@ hr {
 
 	.sponsors {
 		padding-top: 0px;
+		height: 65vh;
 	}
 
 	.contact-text {
@@ -675,7 +676,12 @@ hr {
 		height: 50vh;
 		/* background-size: contain; */
 	}
-	.carousel-item{
+
+	.carousel-6-img img {
+		margin-top: 10%;
+	}
+
+	.carousel-item {
 		height: 60vh;
 	}
 
@@ -741,12 +747,15 @@ hr {
 		flex: 0 0 40%;
 		margin: 0;
 	}
-
+	/* 
 	.carousel-6-img {
 		height: 35vh;
-	}
-	.carousel-item{
+	} */
+
+	.carousel-item {
+		padding-top: 2vh;
 		height: 40vh;
+		background-attachment: scroll;
 	}
 
 	#contact {
@@ -823,6 +832,10 @@ hr {
 
 	.sponsors h2 {
 		font-size: 23px;
+	}
+
+	.carousel-6-img img {
+		margin-top: 20%;
 	}
 
 	.srm-about h2 {
