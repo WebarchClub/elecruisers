@@ -1,13 +1,13 @@
 // Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyBhMZHWgQNpa0uSFRwxtJfd2WJqdxz-KOY",
-    authDomain: "webarchsite2020.firebaseapp.com",
-    databaseURL: "https://webarchsite2020.firebaseio.com",
-    projectId: "webarchsite2020",
-    storageBucket: "webarchsite2020.appspot.com",
-    messagingSenderId: "511347193092",
-    appId: "1:511347193092:web:5596d70be160351270cc51",
-    measurementId: "G-CXT293D67X",
+  apiKey: "AIzaSyC6KBS2GKWiu7OPI-QHkXovvixI1jiZNfg",
+  authDomain: "the-elecruisers.firebaseapp.com",
+  databaseURL: "https://the-elecruisers.firebaseio.com",
+  projectId: "the-elecruisers",
+  storageBucket: "the-elecruisers.appspot.com",
+  messagingSenderId: "730850371962",
+  appId: "1:730850371962:web:a7159cb17a9cfe081ccec3",
+  measurementId: "G-9D7MPYXRMJ"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -24,9 +24,9 @@ db.collection("team")
                 Name: doc.data().name,
                 Role: doc.data().role,
                 photo: doc.data().photo,
-                lnkdn: doc.data().fb,
+                lnkdn: doc.data().lnkdn,
                 insta: doc.data().insta,
-                git: doc.data().git,
+                fb: doc.data().fb,
             };
 
             var div1 = document.createElement("li");
@@ -38,7 +38,7 @@ db.collection("team")
             Find me on:<br>
             <br>
           </li>
-          <a class="btn btn-social-icon btn-github" href="${person.git}"><i class="fa fa-github fa-lg"></i></a>
+          <a class="btn btn-social-icon btn-facebook" href="${person.fb}"><i class="fa fa-facebook fa-lg"></i></a>
           <a class="btn btn-social-icon btn-linkedin" href="${person.lnkdn}"><i class="fa fa-linkedin fa-lg"></i></a>               
           <a class="btn btn-social-icon btn-instagram" href="${person.insta}"><i class="fa fa-instagram fa-lg"></i></a>
         </ul>
