@@ -733,7 +733,7 @@ hr {
 @media screen and (max-width: 569px) {
 	.sponsors h2 {
 		/* padding-top: 15%; */
-		padding-top: 28%; /* 40% looks better as it is more "centered"*/
+		padding-top: 28%;
 		font-size: 30px;
 		letter-spacing: 8px;
 	}
