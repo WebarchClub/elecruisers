@@ -7,16 +7,12 @@ html{
 #topcar .name{
     font-family: 'Black Ops One', cursive;
     font-size: 2em;
-}
-#topcar .title{
-    margin: 0.5em auto;
-    font-family: 'Hammersmith One', sans-serif;
-    font-size: 1.8em;
-    color: #0a97b0;
+    color: #F00;
 }
 #topcar p{
     line-height: 1.8em;
-    font-size: 1.2em;
+    font-size: 1.4em;
+    padding-top: 2em;
 }
 .carcontainer{
     width: 70%;
@@ -100,14 +96,10 @@ cursor: pointer;
     #topcar .name{
         font-size: 1.4em;
     }
-    #topcar .title{
-        margin: 0.4em auto;
-        font-size: 1.4em;
-    }
     #topcar p{
-        font-size: 0.7em;
+        font-size: 1em;
         text-align: center;
-        line-height: 2em;
+        line-height: 1.8em;
     }
     .info{
         font-size: 0.7em;
@@ -127,12 +119,8 @@ cursor: pointer;
     #topcar .name{
         font-size: 1.8em;
     }
-    #topcar .title{
-        margin: 0.5em auto;
-        font-size: 1.8em;
-    }
     #topcar p{
-        font-size: 1.4em;
+        font-size: 1.6em;
         text-align: center;
         line-height: 2em;
     }
@@ -147,14 +135,10 @@ cursor: pointer;
     #topcar .name{
         font-size: 1.8em;
     }
-    #topcar .title{
-        margin: 0.5em auto;
-        font-size: 1.8em;
-    }
     #topcar p{
-        font-size: 1em;
+        font-size: 1.4em;
         text-align: center;
-        line-height: 2em;
+        line-height: 1.8em;
     }
     .info{
         font-size: 1em;
@@ -167,12 +151,8 @@ cursor: pointer;
     #topcar .name{
         font-size: 1.5em;
     }
-    #topcar .title{
-        margin: 0.2em auto;
-        font-size: 1.5em;
-    }
     #topcar p{
-        font-size: 0.8em;
+        font-size: 1em;
         text-align: center;
         line-height: 1.5em;
     }
@@ -185,10 +165,6 @@ cursor: pointer;
         font-size: 0.7em;
     }
     #topcar .name{
-        font-size: 1.2em;
-    }
-    #topcar .title{
-        margin: 0.2em auto;
         font-size: 1.2em;
     }
     #topcar p{
@@ -234,20 +210,25 @@ cursor: pointer;
     cursor: pointer;
     transition: transform 0.4s ease;
 }
-#s1:checked ~ #slide3, #s2:checked ~ #slide1,
-#s3:checked ~ #slide2{
+#s1:checked ~ #slide4, #s2:checked ~ #slide1,
+#s3:checked ~ #slide2, #s4:checked ~ #slide3{
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-    transform: translate3d(-80%,0,-200px);
+    transform: translate3d(-120%,0,-200px);
 }
-#s1:checked ~ #slide1, #s2:checked ~ #slide2,
-#s3:checked ~ #slide3{
-    box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
-    transform: translate3d(0,0,0);
+#s1:checked ~ #slide3, #s2:checked ~ #slide4,
+#s3:checked ~ #slide1, #s4:checked ~ #slide2{
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(120%,0,-200px);
 }
 #s1:checked ~ #slide2, #s2:checked ~ #slide3,
-#s3:checked ~ #slide1{
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-    transform: translate3d(80%,0,-100px);
+#s3:checked ~ #slide4, #s4:checked ~ #slide1{
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(40%,0,0);
+}
+#s1:checked ~ #slide1, #s2:checked ~ #slide2,
+#s3:checked ~ #slide3, #s4:checked ~ #slide4{
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(-40%,0,0);
 }
 #slide1{
     background: url("../images/vehicles/ECR-1.png");
@@ -259,5 +240,9 @@ cursor: pointer;
 }
 #slide3{
     background: url("../images/vehicles/ECR-3.png");
+    background-size: cover;
+}
+#slide4{
+    background: url("../images/vehicles/ECR-4.jpg");
     background-size: cover;
 }

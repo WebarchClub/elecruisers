@@ -25,16 +25,17 @@
             <div id="particles-background" class="vertical-centered-box"></div>
             <div id="particles-foreground" class="vertical-centered-box"></div>
             <div class="preloader">
-                <div class="circle circle1"></div>
-                <div class="circle circle2"></div>
-                <div class="circle circle3"></div>
-              </div>
+                <img src="./images/loader/car-1.png" class="carImage">
+                <img src="./images/loader/208.gif" class="tyre1">
+                <img src="./images/loader/gif.gif" class="smoke-1">
+                <img src="./images/loader/208.gif" class="tyre2">
+            </div>
         </div>
         <div style="display: none; text-align: center; transition: ease-in 2s;" id="wrapper_class" >
             <!-- =====NAVBAR===== -->
         <section id="Navigation">
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="./index.html"><img src="./images/the elecruisers.png" width="150" height="60" class="d-inline-block align-top"></a>
+                <a class="navbar-brand" href="#"><img src="./images/the elecruisers.png" width="150" height="60" class="d-inline-block align-top"></a>
                 <button class="navbar-toggler" id="menu-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
@@ -122,13 +123,13 @@
 
         <script defer src="./JS/config.js"></script>
         <script>
-            var myVar;
+            var myVar;		
             function load() {
-              myVar = setTimeout(showload, 2500);
-            }
+              myVar = setTimeout(showload, 3200);
+            }		
             function showload() {
                 $('#wrapper').fadeOut("slow");
-                  document.getElementById("wrapper_class").style.display = "block";
+                document.getElementById("wrapper_class").style.display = "block";
             }
         </script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
