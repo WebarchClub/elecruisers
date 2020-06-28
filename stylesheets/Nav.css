@@ -1,92 +1,89 @@
-html, body {
-  width: 100%;
-  height: 100%;
-  color: white;
-  background-color: black;
-  background: url(https://img.freepik.com/free-vector/abstract-blue-hexagon-shapes-dark-background_125759-111.jpg?size=626&ext=jpg);
-  background-size: cover;
-  margin: 0;
-  overflow-x: hidden;
+html,
+body {
+	width: 100%;
+	height: 100%;
+	color: white;
+	background-color: black;
+	background: url(https://img.freepik.com/free-vector/abstract-blue-hexagon-shapes-dark-background_125759-111.jpg?size=626&ext=jpg);
+	background-size: cover;
+	margin: 0;
+	overflow-x: hidden;
 }
 
 nav {
-  background: transparent;
-  
+	background: transparent;
 }
-.navbar-toggler{
-  outline: none;
-  border: none;
+.navbar-toggler {
+	outline: none;
+	border: none;
 }
-.fa-bars{
-  color: white;
-  font-size: 40px;
+.fa-bars {
+	color: white;
+	font-size: 40px;
 }
-.navbar-toggler:focus{
-  outline: none;
-  border: none;
+.navbar-toggler:focus {
+	outline: none;
+	border: none;
 }
-.navbar-toggler:active{
-  transform: scale(0.9);
+.navbar-toggler:active {
+	transform: scale(0.9);
 }
-
-
 
 .nav-link {
-  margin: 0 5px;
-  color: white !important;
-  font-size: 14px;
-  font-weight: 100;
-  letter-spacing: 0.2em;
-  font-family: sans-serif;
+	margin: 0 5px;
+	color: white !important;
+	font-size: 14px;
+	font-weight: 100;
+	letter-spacing: 0.2em;
+	font-family: sans-serif;
 }
 
 .nav-link:hover {
-  color: aqua !important;
-  transform: scale(1.1);
-  transition: 200ms;
+	color: aqua !important;
+	transform: scale(1.1);
+	transition: 200ms;
 }
 @media screen and (max-width: 990px) {
-  .nav-link {
-    text-align: center;
-    padding-bottom: 30px;
-    font-size: 14px;
-  }
-  .navbar-brand img {
-    width: 150px;
-    height: 70px;
-  }
+	.nav-link {
+		text-align: center;
+		padding-bottom: 30px;
+		font-size: 14px;
+	}
+	.navbar-brand img {
+		width: 150px;
+		height: 70px;
+	}
 }
 
-
 /* Circle behind */
-div.circleBehind a:before, div.circleBehind a:after {
-  position: absolute;
-  top: 22px;
-  left: 50%;
-  width: 40px;
-  height: 40px;
-  border: 4px solid #0277bd;
-  transform: translateX(-50%) translateY(-50%) scale(0.8);
-  border-radius: 50%;
-  background: transparent;
-  content: "";
-  opacity: 0;
-  z-index: -1;
+div.circleBehind a:before,
+div.circleBehind a:after {
+	position: absolute;
+	top: 22px;
+	left: 50%;
+	width: 40px;
+	height: 40px;
+	border: 4px solid #0277bd;
+	transform: translateX(-50%) translateY(-50%) scale(0.8);
+	border-radius: 50%;
+	background: transparent;
+	content: "";
+	opacity: 0;
+	z-index: -1;
 }
 
 div.circleBehind a:after {
-  border-width: 2px;
-  
-  }
+	border-width: 2px;
+}
 
 div.circleBehind a:hover:before {
-  opacity: 0.6;
-  transform: translateX(-50%) translateY(-50%) scale(1);
-  }
+	opacity: 0.6;
+	transform: translateX(-50%) translateY(-50%) scale(1);
+}
 
 div.circleBehind a:hover:after {
-  opacity: 0.6;
-  transform: translateX(-50%) translateY(-50%) scale(1.3);
+	opacity: 0.6;
+	transform: translateX(-50%) translateY(-50%) scale(1.3);
 }
 
 /* ==================FOOTER============================================== */
@@ -178,6 +175,13 @@ div.circleBehind a:hover:after {
 	line-height: 42px;
 	margin: 10px 15px;
 	vertical-align: middle;
+	padding: 10px;
+	padding-top: 0px;
+}
+
+.location-div {
+	display: flex;
+	align-items: center;
 }
 
 .footer-distributed .footer-center i.fa-envelope {
@@ -284,6 +288,9 @@ div.circleBehind a:hover:after {
 	.footer-distributed {
 		font: bold 14px sans-serif;
 	}
+	.location-div {
+		margin-left: 90px;
+	}
 
 	.footer-distributed .footer-left,
 	.footer-distributed .footer-center,
@@ -294,11 +301,22 @@ div.circleBehind a:hover:after {
 		text-align: center;
 	}
 
+	.footer-distributed .footer-center p {
+		font-size: 13px;
+	}
+
 	.footer-distributed .footer-center i {
 		margin-left: 0;
 	}
 	.phone-icon {
 		text-align: center;
 		margin-right: 50px;
+	}
+}
+
+@media (max-width: 500px) {
+	.location-div {
+		margin-left: 6px;
+		padding-bottom: 6px;
 	}
 }
