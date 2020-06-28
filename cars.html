@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Hammersmith+One&family=Merriweather&display=swap" rel="stylesheet">
+
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="./stylesheets/loader.css">
+	<link rel="stylesheet" type="text/css" href="./stylesheets/Nav.css" />
+  <link rel="stylesheet" href="./stylesheets/cars.css">
+	<title>Elecruisers</title>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" charset="utf-8"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	</head>
+
+<body onload="load()">
+  <div id="wrapper">
+		<div id="particles-background" class="vertical-centered-box"></div>
+		<div id="particles-foreground" class="vertical-centered-box"></div>
+		<div class="preloader">
+			<img src="./images/loader/car-1.png" class="carImage">
+			<img src="./images/loader/208.gif" class="tyre1">
+			<img src="./images/loader/gif.gif" class="smoke-1">
+			<img src="./images/loader/208.gif" class="tyre2">
+		</div>
+	</div>
+	<div style="display: none; text-align: center; transition: ease-in 2s;" id="wrapper_class" >
+    <!-- =====NAVBAR===== -->
+	<section id="Navigation">
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand" href="./index.html"><img src="./images/the elecruisers.png" width="150" height="60" class="d-inline-block align-top"></a>
+			<button class="navbar-toggler" id="menu-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fa fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse circleBehind" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto flex-wrap flex-row">
+					<li class="nav-item active">
+						<a class="nav-link link" href="./index.html">HOME <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link" href="./index.html#vision">ABOUT US</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link" href="./team.html">TEAM</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link" href="./cars.html">VEHICLES</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link" href="./index.html#srm-about">INSTITUTE</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link" href="./index.html#contact">CONTACT US</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+  </section>
+  
+  <!-- pagination -->
+  <section id="slider">
+    <input type="radio" name="slider" id="s1" checked>
+    <input type="radio" name="slider" id="s2">
+    <input type="radio" name="slider" id="s3">
+    <input type="radio" name="slider" id="s4">
+    <label for="s1" id="slide1"><a href="#first-car">ECR-1 <i class="fa fa-chevron-circle-down"></i></a></label>
+    <label for="s2" id="slide2"><a href="#second-car">ECR-2 <i class="fa fa-chevron-circle-down"></i></a></label>
+    <label for="s3" id="slide3"><a href="#third-car">ECR-3 <i class="fa fa-chevron-circle-down"></i></a></label>
+    <label for="s4" id="slide4"><a href="#fourth-car">ECR-4 <i class="fa fa-chevron-circle-down"></i></a></label>
+  </section>
+  <!-- first car -->
+  <section id="topcar">
+    <div id="first-car" class="carcontainer">
+      <div class="car-parent">
+        <div class="car-main">
+          <img src="./images/vehicles/ECR-1.png" alt="IMAGE" class="img-fluid" style="width: 100%;">
+        </div>
+        <div class="car-overlay">
+          <div class="name text-center">ECR 1</div>
+          <div class="info">
+            <li>Top Speed - 30 km/h</li>
+            <li>Weight - 361.5 kg</li>
+            <li>Range - 30 km</li>
+          </div>
+          <p class="car-about text-center">ECR 1.0 was the spark to all the ideas that ignited the quest to make the better version of our dream vehicle</p>
+        </div>
+        <div class="car-more text-center"><i class="fa fa-info-circle"></i></div>
+      </div>
+      <div class="car-slide">
+				 <div class="row justify-content-between">
+          <div class="col-6 top">RANGE</div>
+          <div class="col-6">30 km(per full charge)</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">FUEL TYPE</div>
+          <div class="col-6">Electric</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">MOTOR</div>
+          <div class="col-6">Capacity-8hp Max-Torque(54Nm) 3-phase induction motor</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">CONTROLLER TYPE</div>
+          <div class="col-6">Six switch, 3-pahse-voltage source induction motor drive</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">VEHICLE TYPE</div>
+          <div class="col-6">Single seater, off-road buggy</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">TRANSMISSION TYPE</div>
+          <div class="col-6">CVT based automatic transmission Gear box-single speed reduction gear box</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">BATTERY</div>
+          <div class="col-6">144 Ah, Lithium Phosphate(LPF)</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">TOP SPEED</div>
+          <div class="col-6">45 kmph</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">SUSPENSION</div>
+          <div class="col-6">Front Double wishbone Rear Semi Trailing Arm Shock Absorber Type- coil over</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">STEERING TYPE</div>
+          <div class="col-6">Rack & pinion type Turning Radius- 1.9m
+            </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">BRAKE</div>
+          <div class="col-6">Front- Disc brakes</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">CHASSIS</div>
+          <div class="col-6">Tubular Space frame chassis Material-Chromoly (AISI4130) tubes</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">OVERALL DIMENSIONS</div>
+          <div class="col-6">Length-80 inches Width - 38 inches</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">GROUND CLEARANCE</div>
+          <div class="col-6">10 inches</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">TYRE SIZE</div>
+          <div class="col-6">24*8 -12 Type- tubeless ATV tyres</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">SAFETY FEATURES</div>
+          <div class="col-6">IEMS Mahindra Reva
+            SFI rated 5-point harness system</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">COMFORT & CONVENIENCE</div>
+          <div class="col-6">Seat type-Suspension seat</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">KERB WEIGHT</div>
+          <div class="col-6">361.5 kg</div>
+        </div>
+				<div class="car-less text-center">
+			<a href="#first-car"><i class="fa fa-arrow-circle-up" style="font-size:36px"></i></a>
+
+				</div>
+
+      </div>
+    </div>
+
+
+    <!-- second car -->
+
+    <div id="second-car" class="carcontainer">
+      <div class="car-parent">
+        <div class="car-main">
+          <img src="./images/vehicles/ECR-2.jpg" alt="IMAGE" class="img-fluid" style="width: 100%;">
+        </div>
+        <div class="car-overlay">
+          <div class="name text-center">ECR 2</div>
+          <div class="info">
+            <li>Top Speed - 47 km/h</li>
+            <li>Weight - 353.5 kg</li>
+            <li>Range - 60 km</li>
+          </div>
+          <p class="car-about text-center">ECR 2.0 gave us the opportunity to make the most significant changes from the challenges faced in our first vehicle</p>
+        </div>
+        <div class="car-more text-center"><i class="fa fa-info-circle"></i></div>
+      </div>
+      <div class="car-slide">
+        <div class="row justify-content-between">
+          <div class="col-6 top">RANGE</div>
+          <div class="col-6">60 km(per full charge)</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">FUEL TYPE</div>
+          <div class="col-6">Electric</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">MOTOR</div>
+          <div class="col-6">Capacity-6 hp Max-Torque(38Nm) 3-phase BLDC induction motor</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">CONTROLLER TYPE</div>
+          <div class="col-6">24 FET controlled 3-phase BLDC motor drive</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">VEHICLE TYPE</div>
+          <div class="col-6">Single seater, off-road buggy</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">TRANSMISSION TYPE</div>
+          <div class="col-6">Double deduction single speed gear box</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">BATTERY</div>
+          <div class="col-6">144 Ah, Lithium Phosphate(LPF)</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">TOP SPEED</div>
+          <div class="col-6">47 kmph</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">SUSPENSION</div>
+          <div class="col-6">Front Double wishbone Rear Double wishbone Shock Absorber Type- coil over</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">STEERING TYPE</div>
+          <div class="col-6">Rack & pinion type Turning Radius- 2.2m</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">BRAKE</div>
+          <div class="col-6">Front- Disc brakes</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">CHASSIS</div>
+          <div class="col-6">Tubular Space frame chassis Material-Chromoly (AISI4130) tubes</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">OVERALL DIMENSIONS</div>
+          <div class="col-6">Length-78 inches Width - 36 inches</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">GROUND CLEARANCE</div>
+          <div class="col-6">11 inches</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">TYRE SIZE</div>
+          <div class="col-6">24*8 -12 Type- tubeless ATV tyres</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">SAFETY FEATURES</div>
+          <div class="col-6">Li-BAL BMS(Battery Management System)</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">COMFORT & CONVENIENCE</div>
+          <div class="col-6">Seat type-Bucket seat</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">KERB WEIGHT</div>
+          <div class="col-6">353.5 kg</div>
+        </div>
+				<div class="car-less text-center">
+			<a href="#second-car"><i class="fa fa-arrow-circle-up" style="font-size:36px"></i></a>
+
+				</div>
+      </div>
+    </div>
+
+    <!-- third car -->
+    <div id="third-car" class="carcontainer">
+      <div class="car-parent">
+        <div class="car-main">
+          <img src="./images/vehicles/ECR-3.png" alt="IMAGE" class="img-fluid" style="width: 100%;">
+        </div>
+        <div class="car-overlay">
+          <div class="name text-center">ECR 3</div>
+          <div class="info">
+            <li>Top Speed - 56 km/h</li>
+            <li>Weight - 232.5 kg</li>
+            <li>Range - 70 km</li>
+
+          </div>
+          <p class="car-about text-center">ECR 3.0 is the culmination of our learnings over 3 years and the expression of pushing the limits to the edge and create a unique vehicle</p>
+        </div>
+        <div class="car-more text-center"><i class="fa fa-info-circle"></i></div>
+      </div>
+      <div class="car-slide">
+        <div class="row justify-content-between">
+          <div class="col-6 top">RANGE</div>
+          <div class="col-6">70+ km(per full charge)</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">FUEL TYPE</div>
+          <div class="col-6">Electric</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">MOTOR</div>
+          <div class="col-6">Capacity-8 hp Max-Torque(54Nm) 3-phase induction motor</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">CONTROLLER TYPE</div>
+          <div class="col-6">six switch, 3-phase voltage source induction motor drive</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">VEHICLE TYPE</div>
+          <div class="col-6">Single seater, off-road buggy</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">TRANSMISSION TYPE</div>
+          <div class="col-6">Gear box-single speed double reduction gear box</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">BATTERY</div>
+          <div class="col-6">110 Ah, Lithium NMC</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">TOP SPEED</div>
+          <div class="col-6">56 kmph</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">SUSPENSION</div>
+          <div class="col-6">Front Double wishbone Rear H-Arm Shock Absorber Type- coil over</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">STEERING TYPE</div>
+          <div class="col-6">Rack & pinion type Turning Radius- 1.4m</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">BRAKE</div>
+          <div class="col-6">Front- Disc brakes</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">CHASSIS</div>
+          <div class="col-6">Tubular Space frame chassis Material-Chromoly (AISI4130) tubes</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">OVERALL DIMENSIONS</div>
+          <div class="col-6">Length-75 inches Width - 34 inches</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">GROUND CLEARANCE</div>
+          <div class="col-6">11 inches</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">TYRE SIZE</div>
+          <div class="col-6">24*8 -12 Type- tubeless ATV tyres</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">SAFETY FEATURES</div>
+          <div class="col-6">BMS peak current cut-off-200A for 3sec Cell-650 nos,over current protection- 200A,over voltage protection-60V,over temperature protection-200°C,slave BMS. included,NTC thermistor. IMD-insulation monitoring device(detects fault current in chassis) SFI rated 5-point harness system</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">COMFORT & CONVENIENCE</div>
+          <div class="col-6">Seat type-Bucket seat</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">KERB WEIGHT</div>
+          <div class="col-6">232.5 kg</div>
+        </div>
+				<div class="car-less text-center">
+			<a href="#third-car"><i class="fa fa-arrow-circle-up" style="font-size:36px"></i></a>
+
+				</div>
+      </div>
+    </div>
+
+    <!-- Fourth car -->
+    <div id="fourth-car" class="carcontainer">
+      <div class="car-parent">
+        <div class="car-main">
+          <img src="./images/vehicles/ECR-4.jpg" alt="IMAGE" class="img-fluid" style="width: 100%;">
+        </div>
+        <div class="car-overlay">
+          <div class="name text-center">ECR 4</div>
+          <div class="info">
+            <li>Top Speed - 57.10 km/h</li>
+            <li>Weight - 239 kg</li>
+            <li>Range - 50 km</li>
+
+          </div>
+          <p class="car-about text-center">ECR 4.0 is a new approach from our team to implement new ideas in every aspect of of the vehicle to improve its performance and durability</p>
+        </div>
+        <div class="car-more text-center"><i class="fa fa-info-circle"></i></div>
+      </div>
+      <div class="car-slide">
+        <div class="row justify-content-between">
+          <div class="col-6 top">RANGE</div>
+          <div class="col-6">50+ km(per full charge)</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">FUEL TYPE</div>
+          <div class="col-6">Electric</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">MOTOR</div>
+          <div class="col-6">Capacity-8 hp Max-Torque(54Nm) 3-phase induction motor</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">CONTROLLER TYPE</div>
+          <div class="col-6">six switch, 3-phase voltage source induction motor drive</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">VEHICLE TYPE</div>
+          <div class="col-6">Single seater, off-road buggy</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">TRANSMISSION TYPE</div>
+          <div class="col-6">Single speed double reduction gear box with coupled CVT</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">BATTERY</div>
+          <div class="col-6">110 Ah, Lithium NMC</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">TOP SPEED</div>
+          <div class="col-6">57.10 kmph</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">SUSPENSION</div>
+          <div class="col-6">Front: Double wishbone </br>Rear: semi trailing arm </br>Shock absorber: fox float 3 - air spring</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">STEERING TYPE</div>
+          <div class="col-6">Rack and pinion (1.2m turning radius)</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">BRAKE</div>
+          <div class="col-6"> All 4 outboard disc brakes</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">CHASSIS</div>
+          <div class="col-6">Tubular Space frame chassis Material-Chromoly (AISI4130) tubes</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">OVERALL DIMENSIONS</div>
+          <div class="col-6">Length: 75.7 inches </br>Height: 61.7 inches </br>Width:58.2 inches width</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">GROUND CLEARANCE</div>
+          <div class="col-6">13 inches</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">TYRE SIZE</div>
+          <div class="col-6">22-7-10(tubeless)</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">SAFETY FEATURES</div>
+          <div class="col-6">BMS peak current cut-off-200A for 3sec Cell-650 nos,over current protection- 200A,over voltage protection-60V,over temperature protection-200°C,slave BMS. included,NTC thermistor. IMD-insulation monitoring device(detects fault current in chassis) SFI rated 5-point harness system</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">COMFORT & CONVENIENCE</div>
+          <div class="col-6">Seat type-Bucket seat</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6 top">KERB WEIGHT</div>
+          <div class="col-6">239 kg</div>
+        </div>
+				<div class="car-less text-center">
+			<a href="#fourth-car"><i class="fa fa-arrow-circle-up" style="font-size:36px"></i></a>
+
+				</div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- =====FOOTER===== -->
+  <section id="FOOTER">
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <img src="./images/logobw.png" width="100px" height="100px" alt="footer-logo">
+            <p class="footer-links">
+                <a href="./index.html" class="link-1">Home</a>
+                <a href="./index.html#vision">About Us</a>
+                <a href="./team.html">Team</a>
+                <a href="./cars.html">Vehicles</a>
+                <a href="./index.html#srm-about">Institute</a>
+                <a href="./index.html#contact">Contact Us</a>
+            </p>
+            <p class="footer-company-name">            <span>Developed <img src="./images/webarch_logo.png" alt="webarch-Logo" height="25px" width="25px"> <span>by</span> <a href="https://webarchsrm.com" target="_blank" class="font-weight-bolder"><i><span class="text-dark webarch"> WEBARCH<span></i></a></span></p>
+        </div>
+        <div class="footer-center">
+            <div class="location-div">
+                <i class="fa fa-map-marker"></i>
+                <p>Fabrication Bay near Tech Park SRM-IST Kattankulathur Chennai(TN) - 603203</p>
+            </div>
+            <div class="phone-icon">
+                <i class="fa fa-phone"></i>
+                <p>+91 8939062002</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:theelecruisers@gmail.com">theelecruisers@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>Follow us on social media</span>
+            </p>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/TheElecruisers/" target="_blank" ><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/elecruisers" target="_blank" ><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/the_elecruisers/" target="_blank" ><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</section>
+	</div>
+
+  <!-- Optional JavaScript -->
+  <script>
+		var myVar;		
+		function load() {
+		  myVar = setTimeout(showload, 3200);
+		}		
+		function showload() {
+			$('#wrapper').fadeOut("slow");
+      document.getElementById("wrapper_class").style.display = "block";
+		}
+	</script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+	<script src="./JS/loader.js"></script>
+	<script src="./JS/cars.js"></script>
+	<script src="./JS/navbar.js"></script>
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<!-- Local CSS -->
+	<link rel="stylesheet" href="./stylesheets/loader.css">
+	<link rel="stylesheet" type="text/css" href="./stylesheets/Nav.css" />
+	<link rel="stylesheet" href="./stylesheets/style.css">
+
+	<title>Elecruisers</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" charset="utf-8"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body onload="load()">
+	<div id="wrapper">
+		<div id="particles-background" class="vertical-centered-box"></div>
+		<div id="particles-foreground" class="vertical-centered-box"></div>
+		<div class="preloader">
+			<img src="./images/loader/car-1.png" class="carImage">
+			<img src="./images/loader/208.gif" class="tyre1">
+			<img src="./images/loader/gif.gif" class="smoke-1">
+			<img src="./images/loader/208.gif" class="tyre2">
+		</div>
+	</div>
+	<div style="display: none; text-align: center; transition: ease-in 2s;" id="wrapper_class" >
+		<!-- =====NAVBAR===== -->
+	<section id="Navigation">
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand" href="./index.html"><img src="./images/the elecruisers.png" width="150" height="60" class="d-inline-block align-top"></a>
+			<button class="navbar-toggler" id="menu-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fa fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse circleBehind" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto flex-wrap flex-row">
+					<li class="nav-item active">
+						<a class="nav-link link" href="./index.html">HOME <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link" href="#vision">ABOUT US</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link" href="./team.html">TEAM</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link" href="./cars.html">VEHICLES</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link" href="#srm-about">INSTITUTE</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link" href="#contact">CONTACT US</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</section>
+	<!-- =====CONTENT===== -->
+	<section class="carousel" id="carousel">
+		<header>
+			<!-- #### CAROUSEL FADE #### -->
+			<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+				<div class="carousel-inner">
+					<!-- #### SLIDE ONE #### -->
+					<div class="carousel-item active" style="background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url('./images/carousel/Pic-1.jpg')">
+						<div class="carousel-caption  d-md-block">
+							<p>Aim to diversify e-mobility </p>
+						</div>
+					</div>
+					<!-- #### SLIDE TWO #### -->
+					<div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url('./images/carousel/Pic-2.jpg')">
+						<div class="carousel-caption d-md-block">
+							<p>Passionate group of budding engineers determined to deliver results</p>
+						</div>
+					</div>
+					<!-- #### SLIDE THREE #### -->
+					<div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url('./images/carousel/Pic-3.jpg')">
+						<div class="carousel-caption  d-md-block">
+							<p>No one can whistle a symphony, it takes a whole orchestra to play it </p>
+						</div>
+					</div>
+					<!-- #### SLIDE FOUR #### -->
+					<div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url('./images/carousel/Pic-4.jpg')">
+						<div class="carousel-caption  d-md-block">
+							<p>Talent wins games, but teamwork and intelligence wins championships </p>
+						</div>
+					</div>
+					<!-- #### SLIDE FIVE #### -->
+					<div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url('./images/carousel/Pic-5.jpg')">
+						<div class="carousel-caption  d-md-block">
+							<p>Reimagining an idea that promises a better future can be executed successfully, only by making mistakes and improving upon them</p>
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> &lsaquo; </a>
+					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"> &rsaquo; </a>
+				</div>
+		</header>
+	</section>
+	<!-- ===== VISION SECTION ======-->
+
+	<section class="vision" id="vision">
+		<br><br>
+		<h2>Our Vision</h2>
+		<p>This team is fuelled by passion and desire to keep improving, no matter the setbacks and evolve into a more well round unit, focused on consistency, hard-work and producing best end product that we are capable of.</p>
+		<br>
+		<p>With the rise in global focus towards alternative transportation solution, it’s not just an ATV for us, it's our dream to bring e-mobility to a whole new level and contribute towards a better, greener future.</p>
+		<br>
+		<div class=" col-md-6 col-sm-12 section-vision-container">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Zv6yx3tF1VQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</section>
+	<br><br>
+	<!-- ===== SRM ABOUT SECTION ======-->
+	<section class="srm-about" id="srm-about">
+		<h2>About SRM</h2>
+		<br><br><br>
+		<div class="row align-items-center">
+			<div class="col-lg-6 col-md-6 col-sm-12 srm-about-img">
+				<img src="./images/srmist.jpg" width="500px" height="400px" alt="College Pic" class="img-fluid"><!-- width:500, height:400-->
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 srm-about-info">
+				<p>SRM Institute of Science and Technology (formerly known as SRM University) is one of the top ranking universities in India with over 38,000 students and more than 2600 faculty across all the campus, offering a wide range of undergraduate, postgraduate and doctoral programs in Engineering, Management, Medicine and Health sciences, and Science and Humanities.</p>
+			</div>	
+		</div>
+	</section>
+	<!-- ===== TEAM SECTION ====== -->
+	<section class="team-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-4">
+					<article>
+						<figure>
+							<img alt="A rather marvellous macaw, opening one of its wings to support the cause." src="https://www.srmist.edu.in/Organizational-Chart/img/directoret.jpg" />
+						</figure>
+					
+						<div>
+							<h1>
+								Dr. C. Muthamizhchelvan
+							</h1>
+							<p>
+								Director, Faculty of Engineering & Technology
+							</p>
+							
+						</div>
+						<h2><a href="mailto:director.et@srmist.edu.in"><i class="fa fa-envelope fa-lg"></i></a></h2>
+					</article>
+				</div>
+				<div class="col-12 col-md-4">
+					<article>
+						<figure>
+							
+							<img alt="A rather marvellous macaw, opening one of its wings to support the cause." src="https://www.srmist.edu.in/sites/default/files/images/Rajasekaran_t.jpg" />
+						</figure>
+					
+						<div>
+							<h1>
+								Dr. T. Rajasekaran
+							</h1>
+							<p>
+								Team Principal, Professor and Deputy H.O.D(M.E.)
+							
+						</div>
+						<div>
+						<h2><a href="mailto:rajasekaran.t@ktr.srmuniv.ac.in"><i class="fa fa-envelope fa-lg"></i></a></h2>
+					</div>
+					</article>
+				</div>
+				<div class="col-12 col-md-4">
+					<article>
+						<figure>
+							<img alt="A rather marvellous macaw, opening one of its wings to support the cause." src="https://www.srmist.edu.in/sites/default/files/images/arul_kumar_s.jpg"/>
+						</figure>
+					
+						<div>
+							<h1>
+								Mr. S. Arul Kumar
+							</h1>
+							<p>
+								Team Faculty, Assistant Professor (M.E)
+							</p>
+							
+							
+						</div>
+						<h2 class="margin"><a href="mailto:arulkumar.s@ktr.srmuniv.ac.in"><i class="fa fa-envelope fa-lg"></i></a></h2>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ===== SPONSORS SECTION ======-->
+	<section class="sponsors" id="sponsors">
+		<h2>Our Sponsors</h2>
+		<div id="carousel-6" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-6" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-6" data-slide-to="1"></li>
+				<li data-target="#carousel-6" data-slide-to="2"></li>
+				<li data-target="#carousel-6" data-slide-to="3"></li>
+				<li data-target="#carousel-6" data-slide-to="4"></li>
+				<li data-target="#carousel-6" data-slide-to="5"></li>
+				<li data-target="#carousel-6" data-slide-to="6"></li>
+				<li data-target="#carousel-6" data-slide-to="7"></li>
+				<li data-target="#carousel-6" data-slide-to="8"></li>
+				<li data-target="#carousel-6" data-slide-to="9"></li>
+			</ol>		
+			<div class="carousel-inner" class="carousel-6-inner" role="listbox">
+				<div class="carousel-item carousel-6-img active">
+					<img class="d-block img-fluid" src="./images/sponsors/413.png" alt="slide">
+				</div>			
+				<div class="carousel-item carousel-6-img">
+					<img class="d-block img-fluid" src="./images/sponsors/bender.png" alt="slide">
+				</div>			
+				<div class="carousel-item carousel-6-img">
+					<img class="d-block img-fluid" src="./images/sponsors/burnout.png" alt="slide">
+				</div>
+				<div class="carousel-item carousel-6-img">
+					<img class="d-block img-fluid" src="./images/sponsors/east.png" alt="slide">
+				</div>			
+				<div class="carousel-item carousel-6-img">
+					<img class="d-block img-fluid" src="./images/sponsors/genuine.png" alt="slide">
+				</div>			
+				<div class="carousel-item carousel-6-img">
+					<img class="d-block img-fluid" src="./images/sponsors/indian oil.png" alt="slide">
+				</div>
+				<div class="carousel-item carousel-6-img">
+					<img class="d-block img-fluid" src="./images/sponsors/mathworks.png" alt="slide">
+				</div>
+				<div class="carousel-item carousel-6-img">
+					<img class="d-block img-fluid" src="./images/sponsors/proj.png" alt="slide">
+				</div>
+				<div class="carousel-item carousel-6-img">
+					<img class="d-block img-fluid" src="./images/sponsors/solid.png" alt="slide">
+				</div>
+				<div class="carousel-item carousel-6-img">
+					<img class="d-block img-fluid" src="./images/sponsors/sparkfun.png" alt="slide">
+				</div>
+			</div><!-- e carousel-inner -->			
+			<a class="carousel-control-prev" href="#carousel-6" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">prev</span>
+			</a>			
+			<a class="carousel-control-next" href="#carousel-6" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">next</span>
+			</a>			
+		</div><!-- e carousel -->
+	</section>
+
+
+	<!-- ===== ACHIEVEMENTS SECTION ======-->
+	<section class="achievements" id="achievements">
+		<br><br><br><br>
+		<h2>Our Achievements</h2>
+		<div class="stories-wrapper">
+			<div class="story-bg">
+				<div class="story">
+					<img src="./images/Trophy.png" alt="Customer image" class="story-image text-center"/>			
+					<div class="story-text">
+						<h1 class="story-heading">COC ISIE INDIA 2019</h1>				
+						<p class="story-paragraph">
+							1st runner up in ATV Category
+						</p>
+						<p class="story-paragraph">Best in Endurance and Land Maneuverability.</p> 
+						<h1 class="story-heading">BAJA SAE INDIA Season-2017, 2018, 2019 & 2020</h1>				
+						<p class="story-paragraph">
+							Active participant    
+						</p>
+					</div>
+				</div>
+			</div>
+	</section>
+	<!--DO NOT REMOVE!-->
+	<div class="achievements-overlay"></div>
+	<!-- ======CONTACT US [CONTACT FORM]=======-->
+	<section id="contact" class="container-fluid">
+		<h2 class="section-header">CONTACT</h2>
+		<div class="contact-wrapper">
+			<form class="form-horizontal" role="form" method="post" action="#">
+	  
+				<div class="form-group">
+				  <div class="col-sm-12">
+					<input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="">
+				  </div>
+				</div>
+		  
+				<div class="form-group">
+				  <div class="col-sm-12">
+					<input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">
+				  </div>
+				</div>
+		  
+				<textarea class="form-control" id="long-text" rows="10" placeholder="MESSAGE" name="message"></textarea>
+		  
+				<button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+				  <div class="button text-center">
+					<i class="fa fa-paper-plane "></i><span class="send-text">SEND</span>
+				  </div>
+		  
+				</button>
+		  
+			  </form>
+			  <div class="direct-contact-container">
+		  
+				<ul class="contact-list">
+				  <li class="contact-list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">
+					Fabrication Bay near Tech Park SRM-IST Kattankulathur Chennai(TN) - 603203
+					<span></i></li>  <br><br><br>
+		  
+				  <li class="contact-list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a  class="telephone-number" href="tel:+91-8939062002" title="Give us a call">+91 8939062002</a></span></i></li>
+		  
+				  <li class="contact-list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:theelecruisers@gmail.com" title="Send me an email">theelecruisers@gmail.com</a></span></i></li>
+		  
+				</ul>
+		  
+				<hr>
+				<ul class="social-media-list">
+				 <a href="https://twitter.com/elecruisers" target="_blank" class="contact-icon">
+					<li>
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</li>
+				</a>
+				<a href="https://www.instagram.com/the_elecruisers/" target="_blank" class="contact-icon">
+					<li>
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+					</li>
+				</a>
+				<a href="https://www.facebook.com/TheElecruisers/" target="_blank" class="contact-icon">
+					<li>
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</li>
+				</a>
+				</ul>
+				<hr>
+		  <br>
+			  <div class="copyright mb-5">Developed By <img src="./images/webarch_logo.png" alt="webarch-Logo" height="25px" width="25px" /> 
+				<a href="https://webarchsrm.com" target="_blank" class="webarch"> WEBARCH</a>
+			</div>
+		</div>
+		</div>
+	</section>
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!--Flickity Carousel JS-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+	<!--FONT AWESOME-->
+	<script src="https://use.fontawesome.com/826a7e3dce.js"></script>
+	<script>
+		var myVar;		
+		function load() {
+		  myVar = setTimeout(showload, 3200);
+		}		
+		function showload() {
+			$('#wrapper').fadeOut("slow");
+      		document.getElementById("wrapper_class").style.display = "block";
+		}
+	</script>
+	<script>
+		$('#carousel-6').carousel({
+			interval: 1500,
+			wrap: true,
+			keyboard: true,
+			ride:true
+			});
+	</script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+	<script src="./JS/loader.js"></script>
+	<script src="./JS/navbar.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</html
