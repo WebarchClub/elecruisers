@@ -171,9 +171,8 @@ body {
 .team-section article div p {
 	color: white;
 	font-weight: 400;
-	font-style: italic;
 	/* margin: 1rem 0 3rem; */
-	font-family: "Noticia Text", serif;
+	font-family: "Lato", sans-serif;
 	/* position relative for the pseudo element */
 	position: relative;
 	z-index: 5;
@@ -388,7 +387,7 @@ body {
 	.achievements-overlay {
 		display: block;
 		background-color: none;
-		height: 55vh;
+		height: 100px;
 		width: 100%;
 	}
 }
