@@ -51,9 +51,10 @@ transform: scale3d(0.5, 0.5, 1);
 }
 #particles-background {
 background: transparent;
-background-image: -moz-linear-gradient(45deg, black 100%, #000000 100%);
-background-image: -webkit-linear-gradient(45deg, black 100%, #000000 100%);
-background-image: linear-gradient(45deg, rgb(0, 0, 0) 100%, #000000 100%);
+background-color: #0e1217;
+}
+#particles-foreground{
+  z-index:11;
 }
 .preloader {
 width: 100%;
@@ -64,43 +65,5 @@ position: fixed;
 text-align: center;
 }
 .carImage{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -85%);
-  height: 120px;
-  width: auto;
-  }
-  .tyre1{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-140px, -16px);
-  height: 70px;
-  width: auto;
-  }
-  .tyre2{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(90px, -15px);
-  height: 70px;
-  width: auto;
-  }
-  .smoke-1{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(120px, -60px) rotate(-15deg);
-  height: 120px;
-  width: auto;
-  }
-  @keyframes complete{
-    from{ left: 110%}
-    to{left:-20%}
-  }
-  @media only screen and (max-width: 768px) {
-    .carImage, .tyre1, .tyre2, .smoke-1{
-      animation: complete 4s linear infinite;
-      }
-  }
+  margin-top:5%;
+}
